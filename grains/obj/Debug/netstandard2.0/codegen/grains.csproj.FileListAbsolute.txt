@@ -5,3 +5,10 @@
 /Users/demoroom/Projects/orleans-test/grains/bin/Debug/netstandard2.0/interfaces.pdb
 /Users/demoroom/Projects/orleans-test/grains/obj/Debug/netstandard2.0/codegen/grains.csproj.CoreCompileInputs.cache
 /Users/demoroom/Projects/orleans-test/grains/obj/Debug/netstandard2.0/codegen/grains.AssemblyInfoInputs.cache
+/home/paperspace/kai-backend/grains/bin/Debug/netstandard2.0/grains.deps.json
+/home/paperspace/kai-backend/grains/bin/Debug/netstandard2.0/grains.dll
+/home/paperspace/kai-backend/grains/bin/Debug/netstandard2.0/grains.pdb
+/home/paperspace/kai-backend/grains/bin/Debug/netstandard2.0/interfaces.dll
+/home/paperspace/kai-backend/grains/bin/Debug/netstandard2.0/interfaces.pdb
+/home/paperspace/kai-backend/grains/obj/Debug/netstandard2.0/codegen/grains.csproj.CoreCompileInputs.cache
+/home/paperspace/kai-backend/grains/obj/Debug/netstandard2.0/codegen/grains.AssemblyInfoInputs.cache

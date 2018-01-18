@@ -56,7 +56,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20171218.1": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180111.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
@@ -69,7 +69,7 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20171218.1": {
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180111.1": {
         "type": "package",
         "build": {
           "build/Microsoft.Orleans.OrleansCodeGenerator.Build.targets": {}
@@ -78,7 +78,7 @@
           "buildMultiTargeting/Microsoft.Orleans.OrleansCodeGenerator.Build.targets": {}
         }
       },
-      "NETStandard.Library/2.0.0": {
+      "NETStandard.Library/2.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -797,24 +797,24 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20171218.1": {
-      "sha512": "EPN1yA0uGG4vjYLsAUaoOlPpoanqhEUnTTAb5fJNFY0kIrh9oftIdgaiNI4trj4HH5njcyNcdEUZFcfcS5HJ9Q==",
+    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180111.1": {
+      "sha512": "SpiaYG25rXqYAJbMK652hu99Q7c2xGTWQz7R5+uOHUN9YsINbQUDbK+f0LUOSe1y1JHm5kATPIGCUlUfJQKWgA==",
       "type": "package",
-      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20171218.1",
+      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180111.1",
       "files": [
         "lib/netstandard2.0/Orleans.Core.Abstractions.dll",
-        "microsoft.orleans.core.abstractions.2.0.0-ci.20171218.1.nupkg.sha512",
+        "microsoft.orleans.core.abstractions.2.0.0-ci.20180111.1.nupkg.sha512",
         "microsoft.orleans.core.abstractions.nuspec"
       ]
     },
-    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20171218.1": {
-      "sha512": "adYE18qsSNtpl60ZilSKHRGX8Ox3IFhL3C1Otl66kW/xAOfY4lrTHN0suyNszSJAoLSVXJWXVNOgevjK4k0ezw==",
+    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180111.1": {
+      "sha512": "U944kX0LKZT9Nm1QPx3pdpfY2A7DVYKwPvFZTOdl48hWTRMD+53QZxAZLt/k+jrBLp3caEdPoQiE2d408tDHrw==",
       "type": "package",
-      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20171218.1",
+      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180111.1",
       "files": [
         "build/Microsoft.Orleans.OrleansCodeGenerator.Build.targets",
         "buildMultiTargeting/Microsoft.Orleans.OrleansCodeGenerator.Build.targets",
-        "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20171218.1.nupkg.sha512",
+        "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180111.1.nupkg.sha512",
         "microsoft.orleans.orleanscodegenerator.build.nuspec",
         "tasks/net461/Microsoft.Build.Framework.dll",
         "tasks/net461/Microsoft.Build.Utilities.Core.dll",
@@ -980,10 +980,10 @@
         "tasks/netcoreapp2.0/runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll"
       ]
     },
-    "NETStandard.Library/2.0.0": {
-      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+    "NETStandard.Library/2.0.1": {
+      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
       "type": "package",
-      "path": "netstandard.library/2.0.0",
+      "path": "netstandard.library/2.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1104,7 +1104,7 @@
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
         "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.0.nupkg.sha512",
+        "netstandard.library.2.0.1.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
     },
@@ -3323,29 +3323,29 @@
     ".NETStandard,Version=v2.0": [
       "Microsoft.Extensions.Logging.Abstractions >= 2.0.0",
       "Microsoft.Orleans.OrleansCodeGenerator.Build >= 2.0.0-ci.*",
-      "NETStandard.Library >= 2.0.0",
+      "NETStandard.Library >= 2.0.1",
       "interfaces >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/demoroom/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/home/paperspace/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/demoroom/Projects/orleans-core-base/grains/grains.csproj",
+      "projectUniqueName": "/home/paperspace/kai-backend/grains/grains.csproj",
       "projectName": "grains",
-      "projectPath": "/Users/demoroom/Projects/orleans-core-base/grains/grains.csproj",
-      "packagesPath": "/Users/demoroom/.nuget/packages/",
-      "outputPath": "/Users/demoroom/Projects/orleans-core-base/grains/obj/",
+      "projectPath": "/home/paperspace/kai-backend/grains/grains.csproj",
+      "packagesPath": "/home/paperspace/.nuget/packages/",
+      "outputPath": "/home/paperspace/kai-backend/grains/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/demoroom/Projects/orleans-core-base/NuGet.Config",
-        "/Users/demoroom/.nuget/NuGet/NuGet.Config"
+        "/home/paperspace/kai-backend/NuGet.Config",
+        "/home/paperspace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -3357,8 +3357,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "/Users/demoroom/Projects/orleans-core-base/interfaces/interfaces.csproj": {
-              "projectPath": "/Users/demoroom/Projects/orleans-core-base/interfaces/interfaces.csproj"
+            "/home/paperspace/kai-backend/interfaces/interfaces.csproj": {
+              "projectPath": "/home/paperspace/kai-backend/interfaces/interfaces.csproj"
             }
           }
         }
@@ -3383,7 +3383,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "[2.0.1, )",
             "autoReferenced": true
           }
         },

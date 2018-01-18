@@ -10,3 +10,15 @@
 /Users/demoroom/Projects/orleans-test/client/obj/Debug/netcoreapp2.0/client.AssemblyInfo.cs
 /Users/demoroom/Projects/orleans-test/client/obj/Debug/netcoreapp2.0/client.dll
 /Users/demoroom/Projects/orleans-test/client/obj/Debug/netcoreapp2.0/client.pdb
+/home/paperspace/kai-backend/client/bin/Debug/netcoreapp2.0/client.deps.json
+/home/paperspace/kai-backend/client/bin/Debug/netcoreapp2.0/client.runtimeconfig.json
+/home/paperspace/kai-backend/client/bin/Debug/netcoreapp2.0/client.runtimeconfig.dev.json
+/home/paperspace/kai-backend/client/bin/Debug/netcoreapp2.0/client.dll
+/home/paperspace/kai-backend/client/bin/Debug/netcoreapp2.0/client.pdb
+/home/paperspace/kai-backend/client/bin/Debug/netcoreapp2.0/interfaces.dll
+/home/paperspace/kai-backend/client/bin/Debug/netcoreapp2.0/interfaces.pdb
+/home/paperspace/kai-backend/client/obj/Debug/netcoreapp2.0/client.csproj.CoreCompileInputs.cache
+/home/paperspace/kai-backend/client/obj/Debug/netcoreapp2.0/client.AssemblyInfoInputs.cache
+/home/paperspace/kai-backend/client/obj/Debug/netcoreapp2.0/client.AssemblyInfo.cs
+/home/paperspace/kai-backend/client/obj/Debug/netcoreapp2.0/client.dll
+/home/paperspace/kai-backend/client/obj/Debug/netcoreapp2.0/client.pdb

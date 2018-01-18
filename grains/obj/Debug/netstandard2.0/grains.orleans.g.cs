@@ -8,10 +8,10 @@
 #pragma warning disable 693
 #pragma warning disable 1591
 #pragma warning disable 1998
-[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGen2f5bb8330eFeaturePopulator))]
+[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGend5c7483e05FeaturePopulator))]
 [assembly: global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
 [assembly: global::Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute(@"grains, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-namespace OrleansGeneratedCodeDC7CD1E
+namespace OrleansGeneratedCode9907DDFA
 {
     using global::Orleans;
     using global::System.Reflection;
@@ -20,7 +20,7 @@ namespace OrleansGeneratedCodeDC7CD1E
 namespace OrleansGeneratedCode
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
-    internal sealed class OrleansCodeGen2f5bb8330eFeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
+    internal sealed class OrleansCodeGend5c7483e05FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
     {
         public void Populate(global::Orleans.Metadata.GrainInterfaceFeature feature)
         {
@@ -28,11 +28,13 @@ namespace OrleansGeneratedCode
 
         public void Populate(global::Orleans.Metadata.GrainClassFeature feature)
         {
+            feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof (global::grains.ConversationGrain)));
             feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof (global::grains.SimpleTextGrain)));
         }
 
         public void Populate(global::Orleans.Serialization.SerializerFeature feature)
         {
+            feature.AddKnownType(@"grains.ConversationGrain,grains", @"grains.ConversationGrain");
             feature.AddKnownType(@"grains.SimpleTextGrain,grains", @"grains.SimpleTextGrain");
         }
     }

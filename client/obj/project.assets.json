@@ -386,7 +386,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Orleans.Core/2.0.0-ci.20171218.1": {
+      "Microsoft.Orleans.Core/2.0.0-ci.20180111.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.0.0",
@@ -394,7 +394,7 @@
           "Microsoft.Extensions.DependencyModel": "2.0.0",
           "Microsoft.Extensions.Logging": "2.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20171218.1",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180111.1",
           "Newtonsoft.Json": "10.0.3",
           "System.Collections.Immutable": "1.4.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
@@ -425,7 +425,7 @@
           "lib/netstandard2.0/Orleans.Core.dll": {}
         }
       },
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20171218.1": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180111.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
@@ -2337,23 +2337,23 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Orleans.Core/2.0.0-ci.20171218.1": {
-      "sha512": "fTW3sZKexowcgK4R4bE4djMoGVtjySXXSjgLNhzdlRQPGJuROL92vgPhme8BxTwdpJ7hJf/DoNSz/AUKULm9cw==",
+    "Microsoft.Orleans.Core/2.0.0-ci.20180111.1": {
+      "sha512": "hAZ8zX40bOoO1j+e2di0+fGFf21I5kAP8/vbYQnC879XtJHIzKzve9PqemXnNfCPy8q6mIoIAn70Keh+YOrRKA==",
       "type": "package",
-      "path": "microsoft.orleans.core/2.0.0-ci.20171218.1",
+      "path": "microsoft.orleans.core/2.0.0-ci.20180111.1",
       "files": [
         "lib/netstandard2.0/Orleans.Core.dll",
-        "microsoft.orleans.core.2.0.0-ci.20171218.1.nupkg.sha512",
+        "microsoft.orleans.core.2.0.0-ci.20180111.1.nupkg.sha512",
         "microsoft.orleans.core.nuspec"
       ]
     },
-    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20171218.1": {
-      "sha512": "EPN1yA0uGG4vjYLsAUaoOlPpoanqhEUnTTAb5fJNFY0kIrh9oftIdgaiNI4trj4HH5njcyNcdEUZFcfcS5HJ9Q==",
+    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180111.1": {
+      "sha512": "SpiaYG25rXqYAJbMK652hu99Q7c2xGTWQz7R5+uOHUN9YsINbQUDbK+f0LUOSe1y1JHm5kATPIGCUlUfJQKWgA==",
       "type": "package",
-      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20171218.1",
+      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180111.1",
       "files": [
         "lib/netstandard2.0/Orleans.Core.Abstractions.dll",
-        "microsoft.orleans.core.abstractions.2.0.0-ci.20171218.1.nupkg.sha512",
+        "microsoft.orleans.core.abstractions.2.0.0-ci.20180111.1.nupkg.sha512",
         "microsoft.orleans.core.abstractions.nuspec"
       ]
     },
@@ -6110,24 +6110,24 @@
     ]
   },
   "packageFolders": {
-    "/Users/demoroom/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/home/paperspace/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/demoroom/Projects/orleans-core-base/client/client.csproj",
+      "projectUniqueName": "/home/paperspace/kai-backend/client/client.csproj",
       "projectName": "client",
-      "projectPath": "/Users/demoroom/Projects/orleans-core-base/client/client.csproj",
-      "packagesPath": "/Users/demoroom/.nuget/packages/",
-      "outputPath": "/Users/demoroom/Projects/orleans-core-base/client/obj/",
+      "projectPath": "/home/paperspace/kai-backend/client/client.csproj",
+      "packagesPath": "/home/paperspace/.nuget/packages/",
+      "outputPath": "/home/paperspace/kai-backend/client/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/demoroom/Projects/orleans-core-base/NuGet.Config",
-        "/Users/demoroom/.nuget/NuGet/NuGet.Config"
+        "/home/paperspace/kai-backend/NuGet.Config",
+        "/home/paperspace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -6139,8 +6139,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/demoroom/Projects/orleans-core-base/interfaces/interfaces.csproj": {
-              "projectPath": "/Users/demoroom/Projects/orleans-core-base/interfaces/interfaces.csproj"
+            "/home/paperspace/kai-backend/interfaces/interfaces.csproj": {
+              "projectPath": "/home/paperspace/kai-backend/interfaces/interfaces.csproj"
             }
           }
         }

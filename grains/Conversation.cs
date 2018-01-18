@@ -5,16 +5,15 @@ using interfaces;
 
 namespace grains
 {
-    public class SimpleTextGrain : Orleans.Grain, ISimpleText
+    public class ConversationGrain : Orleans.Grain, IConversation
     {
         private readonly ILogger logger;
-        public SimpleTextGrain(ILogger<SimpleTextGrain> logger)
+        public ConversationGrain(ILogger<ConversationGrain> logger)
         {
             this.logger = logger;
         }
-        public Task<string> GetString(string param)
+        public Task<string> Message(string param)
         {
-            logger.LogInformation("The grain has received a parameter");
             return Task.FromResult($@"Your message is: {param}");
         }
     }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "637e50c9739b15dda274d04b162309bd57540615"
+    "signature": "85d9a7c6993454c13bc1a2f45a9bd2947b0e1e69"
   },
   "compilationOptions": {
     "defines": [
@@ -24,9 +24,9 @@
     ".NETStandard,Version=v2.0": {
       "interfaces/1.0.0": {
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20171218.1",
-          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20171218.1",
-          "NETStandard.Library": "2.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180111.1",
+          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20180111.1",
+          "NETStandard.Library": "2.0.1",
           "Microsoft.Win32.Primitives": "4.0.3.0",
           "mscorlib": "4.0.0.0",
           "netstandard": "2.0.0.0",
@@ -735,7 +735,7 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20171218.1": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180111.1": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
           "System.Runtime.Serialization.Formatters": "4.3.0"
@@ -744,8 +744,8 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20171218.1": {},
-      "NETStandard.Library/2.0.0": {
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180111.1": {},
+      "NETStandard.Library/2.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
@@ -753,7 +753,7 @@
       "Newtonsoft.Json/10.0.3": {
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.1",
           "System.ComponentModel.TypeConverter": "4.3.0",
           "System.Runtime.Serialization.Formatters": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
@@ -1119,9 +1119,9 @@
     ".NETStandard,Version=v2.0/": {
       "interfaces/1.0.0": {
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20171218.1",
-          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20171218.1",
-          "NETStandard.Library": "2.0.0",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180111.1",
+          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20180111.1",
+          "NETStandard.Library": "2.0.1",
           "Microsoft.Win32.Primitives": "4.0.3.0",
           "mscorlib": "4.0.0.0",
           "netstandard": "2.0.0.0",
@@ -1265,7 +1265,7 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20171218.1": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180111.1": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
           "System.Runtime.Serialization.Formatters": "4.3.0"
@@ -1274,8 +1274,8 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20171218.1": {},
-      "NETStandard.Library/2.0.0": {
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180111.1": {},
+      "NETStandard.Library/2.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
@@ -1283,7 +1283,7 @@
       "Newtonsoft.Json/10.0.3": {
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.1",
           "System.ComponentModel.TypeConverter": "4.3.0",
           "System.Runtime.Serialization.Formatters": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
@@ -1737,26 +1737,26 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20171218.1": {
+    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180111.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EPN1yA0uGG4vjYLsAUaoOlPpoanqhEUnTTAb5fJNFY0kIrh9oftIdgaiNI4trj4HH5njcyNcdEUZFcfcS5HJ9Q==",
-      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20171218.1",
-      "hashPath": "microsoft.orleans.core.abstractions.2.0.0-ci.20171218.1.nupkg.sha512"
+      "sha512": "sha512-SpiaYG25rXqYAJbMK652hu99Q7c2xGTWQz7R5+uOHUN9YsINbQUDbK+f0LUOSe1y1JHm5kATPIGCUlUfJQKWgA==",
+      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180111.1",
+      "hashPath": "microsoft.orleans.core.abstractions.2.0.0-ci.20180111.1.nupkg.sha512"
     },
-    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20171218.1": {
+    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180111.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-adYE18qsSNtpl60ZilSKHRGX8Ox3IFhL3C1Otl66kW/xAOfY4lrTHN0suyNszSJAoLSVXJWXVNOgevjK4k0ezw==",
-      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20171218.1",
-      "hashPath": "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20171218.1.nupkg.sha512"
+      "sha512": "sha512-U944kX0LKZT9Nm1QPx3pdpfY2A7DVYKwPvFZTOdl48hWTRMD+53QZxAZLt/k+jrBLp3caEdPoQiE2d408tDHrw==",
+      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180111.1",
+      "hashPath": "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180111.1.nupkg.sha512"
     },
-    "NETStandard.Library/2.0.0": {
+    "NETStandard.Library/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
-      "path": "netstandard.library/2.0.0",
-      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
+      "sha512": "sha512-oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+      "path": "netstandard.library/2.0.1",
+      "hashPath": "netstandard.library.2.0.1.nupkg.sha512"
     },
     "Newtonsoft.Json/10.0.3": {
       "type": "package",

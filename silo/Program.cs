@@ -41,6 +41,7 @@ namespace silo
             var builder = new SiloHostBuilder()
                 .UseConfiguration(config)
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(SimpleTextGrain).Assembly).WithReferences())
+		.ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(ConversationGrain).Assembly).WithReferences())
                 .ConfigureLogging(logging => logging.AddConsole());
 
             var host = builder.Build();
