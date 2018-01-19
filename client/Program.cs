@@ -70,7 +70,7 @@ namespace client
         private static async Task DoClientWork(IClusterClient client)
         {
 	    var conversation = client.GetGrain<IConversation>(0);
-            var text = await conversation.Message("Hello");
+            var text = await conversation.Message("What can you do?");
             Console.WriteLine("\n\n{0}\n\n", text);
         }
     }
