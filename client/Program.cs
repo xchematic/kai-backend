@@ -44,7 +44,7 @@ namespace client
                     var config = ClientConfiguration.LocalhostSilo();
                     client = new ClientBuilder()
                         .UseConfiguration(config)
-			.ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(IConversation).Assembly).WithReferences())
+			            .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(IConversation).Assembly).WithReferences())
                         .ConfigureLogging(logging => logging.AddConsole())
                         .Build();
                     
@@ -69,8 +69,9 @@ namespace client
 
         private static async Task DoClientWork(IClusterClient client)
         {
-	    var conversation = client.GetGrain<IConversation>(0);
-            var text = await conversation.Message("What can you do?");
+	        var conversation = client.GetGrain<IConversation>(0);
+            Console.WriteLine("Sending messsage to the Silo");
+            var text = await conversation.Message("How's it going");
             Console.WriteLine("\n\n{0}\n\n", text);
         }
     }

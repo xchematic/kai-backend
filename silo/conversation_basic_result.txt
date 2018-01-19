@@ -1,0 +1,40 @@
+result: {
+  "input": {
+    "text": "How's it going"
+  },
+  "intents": [
+    {
+      "intent": "greeting",
+      "confidence": 1
+    }
+  ],
+  "entities": [],
+  "context": {
+    "conversation_id": "1f25d911-fea4-4b87-8948-4348979dc77f",
+    "system": {
+      "dialog_stack": [
+        {
+          "dialog_node": "root"
+        }
+      ],
+      "dialog_turn_counter": 1,
+      "dialog_request_counter": 1,
+      "_node_output_map": {
+        "node_1_1516256307069": [
+          0
+        ]
+      },
+      "branch_exited": true,
+      "branch_exited_reason": "completed"
+    }
+  },
+  "output": {
+    "text": [
+      "Hey! How's it going?"
+    ],
+    "nodes_visited": [
+      "node_1_1516256307069"
+    ],
+    "log_messages": []
+  }
+}

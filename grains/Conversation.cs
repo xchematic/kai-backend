@@ -15,7 +15,7 @@ namespace grains
         public ConversationGrain(ILogger<ConversationGrain> logger)
         {
             this.logger = logger;
-            kaiconversation.SetCredential("ac1662c2-bc78-4474-8759-014ddca87611","LnqVZHFa47a7");
+            kaiconversation = new ConversationService("ac1662c2-bc78-4474-8759-014ddca87611","LnqVZHFa47a7", ConversationService.CONVERSATION_VERSION_DATE_2017_05_26);
         }
         public Task<string> Message(string param)
         {

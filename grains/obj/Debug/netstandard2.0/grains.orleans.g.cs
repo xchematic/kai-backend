@@ -8,10 +8,10 @@
 #pragma warning disable 693
 #pragma warning disable 1591
 #pragma warning disable 1998
-[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGene2104b62e9FeaturePopulator))]
+[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGend7538d7643FeaturePopulator))]
 [assembly: global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
 [assembly: global::Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute(@"grains, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-namespace OrleansGeneratedCodeCD461694
+namespace OrleansGeneratedCode8CDAA480
 {
     using global::Orleans;
     using global::System.Reflection;
@@ -20,7 +20,7 @@ namespace OrleansGeneratedCodeCD461694
 namespace OrleansGeneratedCode
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
-    internal sealed class OrleansCodeGene2104b62e9FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
+    internal sealed class OrleansCodeGend7538d7643FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
     {
         public void Populate(global::Orleans.Metadata.GrainInterfaceFeature feature)
         {
@@ -44,8 +44,6 @@ namespace OrleansGeneratedCode
             feature.AddKnownType(@"Newtonsoft.Json.Utilities.BindingFlags,Newtonsoft.Json", @"Newtonsoft.Json.Utilities.BindingFlags");
             feature.AddKnownType(@"Newtonsoft.Json.Serialization.FormatterConverter,Newtonsoft.Json", @"Newtonsoft.Json.Serialization.FormatterConverter");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.ConversationService,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.ConversationService");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Service.WatsonService,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Service.WatsonService");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Service.IWatsonService,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Service.IWatsonService");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.IConversationService,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.IConversationService");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.CaptureGroup,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.CaptureGroup");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.Context,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.Context");
@@ -115,27 +113,6 @@ namespace OrleansGeneratedCode
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.Value+ValueTypeEnum,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.IBM.WatsonDeveloperCloud.Conversation.v1.Model.Value.ValueTypeEnum");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.ValueExport+ValueTypeEnum,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.IBM.WatsonDeveloperCloud.Conversation.v1.Model.ValueExport.ValueTypeEnum");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.WorkspaceExport+StatusEnum,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.IBM.WatsonDeveloperCloud.Conversation.v1.Model.WorkspaceExport.StatusEnum");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Constants,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Constants");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Util.Utility,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Util.Utility");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Util.Extensions.DescriptionExtension,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Util.Extensions.DescriptionExtension");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Util.Attributes.DescriptionAttribute,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Util.Attributes.DescriptionAttribute");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Sockets.AWebSocketClient,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Sockets.AWebSocketClient");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Sockets.ServiceState,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Sockets.ServiceState");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Sockets.WebSocketClient,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Sockets.WebSocketClient");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.HttpFactory,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.HttpFactory");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.HttpMediaType,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.HttpMediaType");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.IClient,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.IClient");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.IRequest,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.IRequest");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.IResponse,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.IResponse");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Request,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Request");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.WatsonHttpClient,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.WatsonHttpClient");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Filters.ErrorFilter,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Filters.ErrorFilter");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Filters.IHttpFilter,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Filters.IHttpFilter");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Extensions.StreamExtension,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Extensions.StreamExtension");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Extensions.UriExtensions,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Extensions.UriExtensions");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Exceptions.Error,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Exceptions.Error");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Exceptions.ErrorConverter,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Exceptions.ErrorConverter");
-            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Exceptions.ServiceResponseException,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Exceptions.ServiceResponseException");
         }
     }
 }
