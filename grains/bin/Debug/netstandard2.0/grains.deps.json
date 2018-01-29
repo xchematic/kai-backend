@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "28c686edd49075b9a60f7fbacaef87a1a398d9b2"
+    "signature": "593c05078cd92862e7e2a69bb81c68935bee6490"
   },
   "compilationOptions": {
     "defines": [
@@ -26,8 +26,9 @@
         "dependencies": {
           "IBM.WatsonDeveloperCloud.Conversation.v1": "1.3.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20180116.5",
+          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20180124.2",
           "NETStandard.Library": "2.0.0",
+          "classes": "1.0.0",
           "interfaces": "1.0.0",
           "Microsoft.Win32.Primitives.Reference": "4.0.3.0",
           "mscorlib": "4.0.0.0",
@@ -763,7 +764,7 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
           "System.Runtime.Serialization.Formatters": "4.3.0"
@@ -772,7 +773,7 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180116.5": {},
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {},
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1603,9 +1604,15 @@
           "lib/netstandard1.1/System.Net.Http.Formatting.dll": {}
         }
       },
+      "classes/1.0.0": {
+        "compile": {
+          "classes.dll": {}
+        }
+      },
       "interfaces/1.0.0": {
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180116.5"
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2",
+          "classes": "1.0.0"
         },
         "compile": {
           "interfaces.dll": {}
@@ -1617,8 +1624,9 @@
         "dependencies": {
           "IBM.WatsonDeveloperCloud.Conversation.v1": "1.3.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20180116.5",
+          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20180124.2",
           "NETStandard.Library": "2.0.0",
+          "classes": "1.0.0",
           "interfaces": "1.0.0",
           "Microsoft.Win32.Primitives.Reference": "4.0.3.0",
           "mscorlib": "4.0.0.0",
@@ -1789,7 +1797,7 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
           "System.Runtime.Serialization.Formatters": "4.3.0"
@@ -1798,7 +1806,7 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180116.5": {},
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {},
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -2734,9 +2742,15 @@
           "lib/netstandard1.1/System.Net.Http.Formatting.dll": {}
         }
       },
+      "classes/1.0.0": {
+        "runtime": {
+          "classes.dll": {}
+        }
+      },
       "interfaces/1.0.0": {
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180116.5"
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2",
+          "classes": "1.0.0"
         },
         "runtime": {
           "interfaces.dll": {}
@@ -2792,19 +2806,19 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
+    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mHYygiY7RGq24+dSTEA+ArgwlUhqB9GFUQPaOy3qaDfYitjARhyBWeLeh8VRI3044aMya0smVUoANoU+cZNNMw==",
-      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180116.5",
-      "hashPath": "microsoft.orleans.core.abstractions.2.0.0-ci.20180116.5.nupkg.sha512"
+      "sha512": "sha512-nsRfCCPmS4iQjLTRvixNu3qHbvcxESKH9sO3ZYOj/XwBPdHG+nx3tlqdyNUwKH1ES6yMpMr0bz5z4j+GNAHisQ==",
+      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180124.2",
+      "hashPath": "microsoft.orleans.core.abstractions.2.0.0-ci.20180124.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180116.5": {
+    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-60GR5n7R0CB2xiEDmMsSxI3ryx+zK3RMKVi5MIakhVGPpshzgBBQX7FgpcoaynCuxUHIL/czZ92fKsp38fe3cw==",
-      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180116.5",
-      "hashPath": "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180116.5.nupkg.sha512"
+      "sha512": "sha512-4KzOF6Jpti84VyWGB6ebwJ++2vRH0qUf/TS1m3P7WOww0koMOwSwV7x0nY76ctECyM1d1YFqjmGx0RLypm/Xcw==",
+      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180124.2",
+      "hashPath": "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180124.2.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
@@ -3407,6 +3421,11 @@
       "sha512": "sha512-+J6TrYWG95PV7ubRTiDzU+4As/tPzQ4Zgm5FmH9OFQ7hHn/P+Xu2ZDNaOGWV1DdB77dpirekI3pvc9aWwhTRKA==",
       "path": "wdc.system.net.http.formatting.netstandard/1.0.0",
       "hashPath": "wdc.system.net.http.formatting.netstandard.1.0.0.nupkg.sha512"
+    },
+    "classes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "interfaces/1.0.0": {
       "type": "project",

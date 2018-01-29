@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "b8db109de5ecf1bc7e7300a2fabffdb5a65da6c5"
+    "signature": "ce276e5c64dd7dd6cf0f54e91c7ab9bcef57f17d"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,7 +9,8 @@
       "client/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Console": "2.0.0",
-          "Microsoft.Orleans.Core": "2.0.0-ci.20180116.5",
+          "Microsoft.Orleans.Core": "2.0.0-ci.20180124.2",
+          "classes": "1.0.0",
           "interfaces": "1.0.0"
         },
         "runtime": {
@@ -153,14 +154,14 @@
         }
       },
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Orleans.Core/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core/2.0.0-ci.20180124.2": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.0.0",
           "Microsoft.Extensions.DependencyInjection": "2.0.0",
           "Microsoft.Extensions.DependencyModel": "2.0.0",
           "Microsoft.Extensions.Logging": "2.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180116.5",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2",
           "Newtonsoft.Json": "10.0.3",
           "System.Collections.Immutable": "1.4.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
@@ -188,7 +189,7 @@
           "lib/netstandard2.0/Orleans.Core.dll": {}
         }
       },
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
           "System.Runtime.Serialization.Formatters": "4.3.0"
@@ -1077,9 +1078,15 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "classes/1.0.0": {
+        "runtime": {
+          "classes.dll": {}
+        }
+      },
       "interfaces/1.0.0": {
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180116.5"
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2",
+          "classes": "1.0.0"
         },
         "runtime": {
           "interfaces.dll": {}
@@ -1198,19 +1205,19 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Orleans.Core/2.0.0-ci.20180116.5": {
+    "Microsoft.Orleans.Core/2.0.0-ci.20180124.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UyXtpa0Iqddqr65yy2zF8Cw9Kb8Bxv6X9x69Ycc+dK8F1L8TOAGwrqpU32rtSdXFlxINYAWhgWNvDXN5rJyflw==",
-      "path": "microsoft.orleans.core/2.0.0-ci.20180116.5",
-      "hashPath": "microsoft.orleans.core.2.0.0-ci.20180116.5.nupkg.sha512"
+      "sha512": "sha512-V8KGd5wQJItULAqTh2hOdbrK2gS1g63l51p3TZfGl6V6Qi11nO5aVBK8VT+W7/oIHi37Lh/Vg3kpERVLqq5bWg==",
+      "path": "microsoft.orleans.core/2.0.0-ci.20180124.2",
+      "hashPath": "microsoft.orleans.core.2.0.0-ci.20180124.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
+    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mHYygiY7RGq24+dSTEA+ArgwlUhqB9GFUQPaOy3qaDfYitjARhyBWeLeh8VRI3044aMya0smVUoANoU+cZNNMw==",
-      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180116.5",
-      "hashPath": "microsoft.orleans.core.abstractions.2.0.0-ci.20180116.5.nupkg.sha512"
+      "sha512": "sha512-nsRfCCPmS4iQjLTRvixNu3qHbvcxESKH9sO3ZYOj/XwBPdHG+nx3tlqdyNUwKH1ES6yMpMr0bz5z4j+GNAHisQ==",
+      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180124.2",
+      "hashPath": "microsoft.orleans.core.abstractions.2.0.0-ci.20180124.2.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
@@ -1785,6 +1792,11 @@
       "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "classes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "interfaces/1.0.0": {
       "type": "project",

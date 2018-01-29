@@ -85,7 +85,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
@@ -98,7 +98,7 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {
         "type": "package",
         "build": {
           "build/Microsoft.Orleans.OrleansCodeGenerator.Build.targets": {}
@@ -1561,11 +1561,22 @@
           "lib/netstandard1.1/System.Net.Http.Formatting.dll": {}
         }
       },
+      "classes/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/classes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/classes.dll": {}
+        }
+      },
       "interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci"
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci",
+          "classes": "1.0.0"
         },
         "compile": {
           "bin/placeholder/interfaces.dll": {}
@@ -1691,24 +1702,24 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
-      "sha512": "mHYygiY7RGq24+dSTEA+ArgwlUhqB9GFUQPaOy3qaDfYitjARhyBWeLeh8VRI3044aMya0smVUoANoU+cZNNMw==",
+    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
+      "sha512": "nsRfCCPmS4iQjLTRvixNu3qHbvcxESKH9sO3ZYOj/XwBPdHG+nx3tlqdyNUwKH1ES6yMpMr0bz5z4j+GNAHisQ==",
       "type": "package",
-      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180116.5",
+      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180124.2",
       "files": [
         "lib/netstandard2.0/Orleans.Core.Abstractions.dll",
-        "microsoft.orleans.core.abstractions.2.0.0-ci.20180116.5.nupkg.sha512",
+        "microsoft.orleans.core.abstractions.2.0.0-ci.20180124.2.nupkg.sha512",
         "microsoft.orleans.core.abstractions.nuspec"
       ]
     },
-    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180116.5": {
-      "sha512": "60GR5n7R0CB2xiEDmMsSxI3ryx+zK3RMKVi5MIakhVGPpshzgBBQX7FgpcoaynCuxUHIL/czZ92fKsp38fe3cw==",
+    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {
+      "sha512": "4KzOF6Jpti84VyWGB6ebwJ++2vRH0qUf/TS1m3P7WOww0koMOwSwV7x0nY76ctECyM1d1YFqjmGx0RLypm/Xcw==",
       "type": "package",
-      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180116.5",
+      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180124.2",
       "files": [
         "build/Microsoft.Orleans.OrleansCodeGenerator.Build.targets",
         "buildMultiTargeting/Microsoft.Orleans.OrleansCodeGenerator.Build.targets",
-        "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180116.5.nupkg.sha512",
+        "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180124.2.nupkg.sha512",
         "microsoft.orleans.orleanscodegenerator.build.nuspec",
         "tasks/net461/Microsoft.Build.Framework.dll",
         "tasks/net461/Microsoft.Build.Utilities.Core.dll",
@@ -5717,6 +5728,11 @@
         "wdc.system.net.http.formatting.netstandard.nuspec"
       ]
     },
+    "classes/1.0.0": {
+      "type": "project",
+      "path": "../classes/classes.csproj",
+      "msbuildProject": "../classes/classes.csproj"
+    },
     "interfaces/1.0.0": {
       "type": "project",
       "path": "../interfaces/interfaces.csproj",
@@ -5729,6 +5745,7 @@
       "Microsoft.Extensions.Logging.Abstractions >= 2.0.0",
       "Microsoft.Orleans.OrleansCodeGenerator.Build >= 2.0.0-ci.*",
       "NETStandard.Library >= 2.0.0",
+      "classes >= 1.0.0",
       "interfaces >= 1.0.0"
     ]
   },
@@ -5764,6 +5781,9 @@
           "projectReferences": {
             "/Users/demoroom/Projects/kai-backend/interfaces/interfaces.csproj": {
               "projectPath": "/Users/demoroom/Projects/kai-backend/interfaces/interfaces.csproj"
+            },
+            "/Users/demoroom/Projects/kai-backend/classes/classes.csproj": {
+              "projectPath": "/Users/demoroom/Projects/kai-backend/classes/classes.csproj"
             }
           }
         }

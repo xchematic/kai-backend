@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "dc1f07eb12094799d0c04ad4befc6e152f890bba"
+    "signature": "3fab21de5d06d37a2341cdbc5b54d9459eef1c75"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,8 +9,8 @@
       "silo/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Console": "2.0.0",
-          "Microsoft.Orleans.OrleansProviders": "2.0.0-ci.20180116.5",
-          "Microsoft.Orleans.OrleansRuntime": "2.0.0-ci.20180116.5",
+          "Microsoft.Orleans.OrleansProviders": "2.0.0-ci.20180124.2",
+          "Microsoft.Orleans.OrleansRuntime": "2.0.0-ci.20180124.2",
           "grains": "1.0.0",
           "interfaces": "1.0.0"
         },
@@ -174,14 +174,14 @@
         }
       },
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Orleans.Core/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core/2.0.0-ci.20180124.2": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.0.0",
           "Microsoft.Extensions.DependencyInjection": "2.0.0",
           "Microsoft.Extensions.DependencyModel": "2.0.0",
           "Microsoft.Extensions.Logging": "2.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180116.5",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2",
           "Newtonsoft.Json": "10.0.3",
           "System.Collections.Immutable": "1.4.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
@@ -209,7 +209,7 @@
           "lib/netstandard2.0/Orleans.Core.dll": {}
         }
       },
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
           "System.Runtime.Serialization.Formatters": "4.3.0"
@@ -218,30 +218,30 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180116.5": {},
-      "Microsoft.Orleans.OrleansProviders/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {},
+      "Microsoft.Orleans.OrleansProviders/2.0.0-ci.20180124.2": {
         "dependencies": {
-          "Microsoft.Orleans.Core": "2.0.0-ci.20180116.5",
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180116.5"
+          "Microsoft.Orleans.Core": "2.0.0-ci.20180124.2",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2"
         },
         "runtime": {
           "lib/netstandard2.0/OrleansProviders.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansRuntime/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.OrleansRuntime/2.0.0-ci.20180124.2": {
         "dependencies": {
           "Microsoft.Extensions.Options": "2.0.0",
-          "Microsoft.Orleans.Core": "2.0.0-ci.20180116.5",
-          "Microsoft.Orleans.Runtime.Abstractions": "2.0.0-ci.20180116.5"
+          "Microsoft.Orleans.Core": "2.0.0-ci.20180124.2",
+          "Microsoft.Orleans.Runtime.Abstractions": "2.0.0-ci.20180124.2"
         },
         "runtime": {
           "lib/netstandard2.0/Orleans.Runtime.dll": {}
         }
       },
-      "Microsoft.Orleans.Runtime.Abstractions/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Runtime.Abstractions/2.0.0-ci.20180124.2": {
         "dependencies": {
           "Microsoft.Extensions.Options": "2.0.0",
-          "Microsoft.Orleans.Core": "2.0.0-ci.20180116.5"
+          "Microsoft.Orleans.Core": "2.0.0-ci.20180124.2"
         },
         "runtime": {
           "lib/netstandard2.0/Orleans.Runtime.Abstractions.dll": {}
@@ -1441,11 +1441,17 @@
           "lib/netstandard1.1/System.Net.Http.Formatting.dll": {}
         }
       },
+      "classes/1.0.0": {
+        "runtime": {
+          "classes.dll": {}
+        }
+      },
       "grains/1.0.0": {
         "dependencies": {
           "IBM.WatsonDeveloperCloud.Conversation.v1": "1.3.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20180116.5",
+          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20180124.2",
+          "classes": "1.0.0",
           "interfaces": "1.0.0"
         },
         "runtime": {
@@ -1454,7 +1460,8 @@
       },
       "interfaces/1.0.0": {
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180116.5"
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2",
+          "classes": "1.0.0"
         },
         "runtime": {
           "interfaces.dll": {}
@@ -1587,47 +1594,47 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Orleans.Core/2.0.0-ci.20180116.5": {
+    "Microsoft.Orleans.Core/2.0.0-ci.20180124.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UyXtpa0Iqddqr65yy2zF8Cw9Kb8Bxv6X9x69Ycc+dK8F1L8TOAGwrqpU32rtSdXFlxINYAWhgWNvDXN5rJyflw==",
-      "path": "microsoft.orleans.core/2.0.0-ci.20180116.5",
-      "hashPath": "microsoft.orleans.core.2.0.0-ci.20180116.5.nupkg.sha512"
+      "sha512": "sha512-V8KGd5wQJItULAqTh2hOdbrK2gS1g63l51p3TZfGl6V6Qi11nO5aVBK8VT+W7/oIHi37Lh/Vg3kpERVLqq5bWg==",
+      "path": "microsoft.orleans.core/2.0.0-ci.20180124.2",
+      "hashPath": "microsoft.orleans.core.2.0.0-ci.20180124.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
+    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mHYygiY7RGq24+dSTEA+ArgwlUhqB9GFUQPaOy3qaDfYitjARhyBWeLeh8VRI3044aMya0smVUoANoU+cZNNMw==",
-      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180116.5",
-      "hashPath": "microsoft.orleans.core.abstractions.2.0.0-ci.20180116.5.nupkg.sha512"
+      "sha512": "sha512-nsRfCCPmS4iQjLTRvixNu3qHbvcxESKH9sO3ZYOj/XwBPdHG+nx3tlqdyNUwKH1ES6yMpMr0bz5z4j+GNAHisQ==",
+      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180124.2",
+      "hashPath": "microsoft.orleans.core.abstractions.2.0.0-ci.20180124.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180116.5": {
+    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-60GR5n7R0CB2xiEDmMsSxI3ryx+zK3RMKVi5MIakhVGPpshzgBBQX7FgpcoaynCuxUHIL/czZ92fKsp38fe3cw==",
-      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180116.5",
-      "hashPath": "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180116.5.nupkg.sha512"
+      "sha512": "sha512-4KzOF6Jpti84VyWGB6ebwJ++2vRH0qUf/TS1m3P7WOww0koMOwSwV7x0nY76ctECyM1d1YFqjmGx0RLypm/Xcw==",
+      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180124.2",
+      "hashPath": "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180124.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.OrleansProviders/2.0.0-ci.20180116.5": {
+    "Microsoft.Orleans.OrleansProviders/2.0.0-ci.20180124.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6bU8a8xOBojcadaXEx+DALJV+N8632rhKyrKVnmW6SnDut8KG/Bm/PDs7HNAV+EjNPVHcHmqQbHSuHRRZ9KxoQ==",
-      "path": "microsoft.orleans.orleansproviders/2.0.0-ci.20180116.5",
-      "hashPath": "microsoft.orleans.orleansproviders.2.0.0-ci.20180116.5.nupkg.sha512"
+      "sha512": "sha512-31rVTxKbcRbhjFuM+luC1QX8npJr3YI+epKLC5OH3OxXsL9TcPG8taNK+CxdSwQ9WSMGtG3WsgR5JwChb+ScMQ==",
+      "path": "microsoft.orleans.orleansproviders/2.0.0-ci.20180124.2",
+      "hashPath": "microsoft.orleans.orleansproviders.2.0.0-ci.20180124.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.OrleansRuntime/2.0.0-ci.20180116.5": {
+    "Microsoft.Orleans.OrleansRuntime/2.0.0-ci.20180124.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WsYESjQ3ShmOXvnUydbCBDu0lHQb4auaC7Z4mtMlMjGRwMe+ndLOKQpMhmBwWreI901qCuX32MJmYpN+2RF+7w==",
-      "path": "microsoft.orleans.orleansruntime/2.0.0-ci.20180116.5",
-      "hashPath": "microsoft.orleans.orleansruntime.2.0.0-ci.20180116.5.nupkg.sha512"
+      "sha512": "sha512-i6ShhMsfZump+Fur+XIkmeMcLvGWupOvlnDyaamHSzkCY3kYxN6fudMLxey5GIGn80u4HE5rf0uzRlrd7XoMIQ==",
+      "path": "microsoft.orleans.orleansruntime/2.0.0-ci.20180124.2",
+      "hashPath": "microsoft.orleans.orleansruntime.2.0.0-ci.20180124.2.nupkg.sha512"
     },
-    "Microsoft.Orleans.Runtime.Abstractions/2.0.0-ci.20180116.5": {
+    "Microsoft.Orleans.Runtime.Abstractions/2.0.0-ci.20180124.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7nkBLAKMPnxHxM5x+o+3/J7iOiNNkdmvoQdWiTrGa2cjQdYpJwY7gYuWvdncsSVH5GkMkpem0XcTaSyKTe0wDg==",
-      "path": "microsoft.orleans.runtime.abstractions/2.0.0-ci.20180116.5",
-      "hashPath": "microsoft.orleans.runtime.abstractions.2.0.0-ci.20180116.5.nupkg.sha512"
+      "sha512": "sha512-yYtO6QR1bpAfQ0xGsDGxpFB0wD1YaXOlxjSQ//s+lU0Gvrss3pwplGCGhrJGKWX3fohlGelbm1GmQZhcqYRRXA==",
+      "path": "microsoft.orleans.runtime.abstractions/2.0.0-ci.20180124.2",
+      "hashPath": "microsoft.orleans.runtime.abstractions.2.0.0-ci.20180124.2.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
@@ -2328,6 +2335,11 @@
       "sha512": "sha512-+J6TrYWG95PV7ubRTiDzU+4As/tPzQ4Zgm5FmH9OFQ7hHn/P+Xu2ZDNaOGWV1DdB77dpirekI3pvc9aWwhTRKA==",
       "path": "wdc.system.net.http.formatting.netstandard/1.0.0",
       "hashPath": "wdc.system.net.http.formatting.netstandard.1.0.0.nupkg.sha512"
+    },
+    "classes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "grains/1.0.0": {
       "type": "project",

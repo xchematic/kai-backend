@@ -40,3 +40,5 @@
 /Users/demoroom/Projects/kai-backend/silo/obj/Debug/netcoreapp2.0/silo.AssemblyInfo.cs
 /Users/demoroom/Projects/kai-backend/silo/obj/Debug/netcoreapp2.0/silo.dll
 /Users/demoroom/Projects/kai-backend/silo/obj/Debug/netcoreapp2.0/silo.pdb
+/Users/demoroom/Projects/kai-backend/silo/bin/Debug/netcoreapp2.0/classes.dll
+/Users/demoroom/Projects/kai-backend/silo/bin/Debug/netcoreapp2.0/classes.pdb

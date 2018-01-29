@@ -386,7 +386,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Orleans.Core/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core/2.0.0-ci.20180124.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.0.0",
@@ -394,7 +394,7 @@
           "Microsoft.Extensions.DependencyModel": "2.0.0",
           "Microsoft.Extensions.Logging": "2.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180116.5",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2",
           "Newtonsoft.Json": "10.0.3",
           "System.Collections.Immutable": "1.4.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
@@ -425,7 +425,7 @@
           "lib/netstandard2.0/Orleans.Core.dll": {}
         }
       },
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
@@ -1774,11 +1774,22 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "classes/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/classes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/classes.dll": {}
+        }
+      },
       "interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci"
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci",
+          "classes": "1.0.0"
         },
         "compile": {
           "bin/placeholder/interfaces.dll": {}
@@ -2337,23 +2348,23 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Orleans.Core/2.0.0-ci.20180116.5": {
-      "sha512": "UyXtpa0Iqddqr65yy2zF8Cw9Kb8Bxv6X9x69Ycc+dK8F1L8TOAGwrqpU32rtSdXFlxINYAWhgWNvDXN5rJyflw==",
+    "Microsoft.Orleans.Core/2.0.0-ci.20180124.2": {
+      "sha512": "V8KGd5wQJItULAqTh2hOdbrK2gS1g63l51p3TZfGl6V6Qi11nO5aVBK8VT+W7/oIHi37Lh/Vg3kpERVLqq5bWg==",
       "type": "package",
-      "path": "microsoft.orleans.core/2.0.0-ci.20180116.5",
+      "path": "microsoft.orleans.core/2.0.0-ci.20180124.2",
       "files": [
         "lib/netstandard2.0/Orleans.Core.dll",
-        "microsoft.orleans.core.2.0.0-ci.20180116.5.nupkg.sha512",
+        "microsoft.orleans.core.2.0.0-ci.20180124.2.nupkg.sha512",
         "microsoft.orleans.core.nuspec"
       ]
     },
-    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
-      "sha512": "mHYygiY7RGq24+dSTEA+ArgwlUhqB9GFUQPaOy3qaDfYitjARhyBWeLeh8VRI3044aMya0smVUoANoU+cZNNMw==",
+    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
+      "sha512": "nsRfCCPmS4iQjLTRvixNu3qHbvcxESKH9sO3ZYOj/XwBPdHG+nx3tlqdyNUwKH1ES6yMpMr0bz5z4j+GNAHisQ==",
       "type": "package",
-      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180116.5",
+      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180124.2",
       "files": [
         "lib/netstandard2.0/Orleans.Core.Abstractions.dll",
-        "microsoft.orleans.core.abstractions.2.0.0-ci.20180116.5.nupkg.sha512",
+        "microsoft.orleans.core.abstractions.2.0.0-ci.20180124.2.nupkg.sha512",
         "microsoft.orleans.core.abstractions.nuspec"
       ]
     },
@@ -6095,6 +6106,11 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "classes/1.0.0": {
+      "type": "project",
+      "path": "../classes/classes.csproj",
+      "msbuildProject": "../classes/classes.csproj"
+    },
     "interfaces/1.0.0": {
       "type": "project",
       "path": "../interfaces/interfaces.csproj",
@@ -6106,6 +6122,7 @@
       "Microsoft.Extensions.Logging.Console >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.Orleans.Core >= 2.0.0-ci.*",
+      "classes >= 1.0.0",
       "interfaces >= 1.0.0"
     ]
   },
@@ -6141,6 +6158,9 @@
           "projectReferences": {
             "/Users/demoroom/Projects/kai-backend/interfaces/interfaces.csproj": {
               "projectPath": "/Users/demoroom/Projects/kai-backend/interfaces/interfaces.csproj"
+            },
+            "/Users/demoroom/Projects/kai-backend/classes/classes.csproj": {
+              "projectPath": "/Users/demoroom/Projects/kai-backend/classes/classes.csproj"
             }
           }
         }

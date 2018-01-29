@@ -1,35 +1,51 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
 using interfaces;
 using IBM.WatsonDeveloperCloud.Conversation.v1;
 using IBM.WatsonDeveloperCloud.Conversation.v1.Model;
 using Newtonsoft.Json;
+using classes;
+using Orleans;
 
 namespace grains
 {
-    public class ConversationGrain : Orleans.Grain, IConversation
+    public class ConversationGrain : Grain, IConversation
     {
-        private readonly ILogger logger;
         private ConversationService kaiconversation;
-        public ConversationGrain(ILogger<ConversationGrain> logger)
+        private ConversationProperties ConversationProperties;
+
+        public override async Task OnActivateAsync()
         {
-            this.logger = logger;
-            kaiconversation = new ConversationService("ac1662c2-bc78-4474-8759-014ddca87611","LnqVZHFa47a7", ConversationService.CONVERSATION_VERSION_DATE_2017_05_26);
+            if(ConversationProperties != null && !String.IsNullOrEmpty(ConversationProperties.ConversationPass))
+            {
+                string ConversationKey;
+                this.GetPrimaryKey(out ConversationKey);
+                kaiconversation = new ConversationService(ConversationKey, ConversationProperties.ConversationPass, ConversationService.CONVERSATION_VERSION_DATE_2017_05_26);
+            }
+            await base.OnActivateAsync();
+        }
+
+        public async Task SetProperties(ConversationProperties properties)
+        {
+            ConversationProperties = properties;
+            await OnActivateAsync();
         }
         public Task<string> Message(string param)
         {
-            MessageRequest request = new MessageRequest()
+            if(kaiconversation != null)
             {
-                Input = new InputData()
+                MessageRequest request = new MessageRequest()
                 {
-                    Text = param
-                }
-            };
+                    Input = new InputData()
+                    {
+                        Text = param
+                    }
+                };
 
-            MessageResponse result = kaiconversation.Message("314571e1-d570-4127-9682-8cda467d6f42", request);
-
-            return Task.FromResult(string.Format("result: {0}", JsonConvert.SerializeObject(result, Formatting.Indented)));
+                MessageResponse result = kaiconversation.Message(ConversationProperties.ConversationWorkspace, request);
+                return Task.FromResult(string.Format("result: {0}", JsonConvert.SerializeObject(result, Formatting.Indented)));
+            }
+            return Task.FromResult("Sorry, I'm having problems accessing my rules engine.");
         }
     }
 }

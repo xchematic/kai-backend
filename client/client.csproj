@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\interfaces\interfaces.csproj" />
+    <ProjectReference Include="..\classes\classes.csproj" />
   </ItemGroup>
 
 </Project>

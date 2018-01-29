@@ -415,7 +415,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Orleans.Core/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core/2.0.0-ci.20180124.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.0.0",
@@ -423,7 +423,7 @@
           "Microsoft.Extensions.DependencyModel": "2.0.0",
           "Microsoft.Extensions.Logging": "2.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180116.5",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2",
           "Newtonsoft.Json": "10.0.3",
           "System.Collections.Immutable": "1.4.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
@@ -454,7 +454,7 @@
           "lib/netstandard2.0/Orleans.Core.dll": {}
         }
       },
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
@@ -467,7 +467,7 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {
         "type": "package",
         "build": {
           "build/_._": {}
@@ -476,11 +476,11 @@
           "buildMultiTargeting/_._": {}
         }
       },
-      "Microsoft.Orleans.OrleansProviders/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.OrleansProviders/2.0.0-ci.20180124.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Orleans.Core": "2.0.0-ci.20180116.5",
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180116.5"
+          "Microsoft.Orleans.Core": "2.0.0-ci.20180124.2",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2"
         },
         "compile": {
           "lib/netstandard2.0/OrleansProviders.dll": {}
@@ -489,12 +489,12 @@
           "lib/netstandard2.0/OrleansProviders.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansRuntime/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.OrleansRuntime/2.0.0-ci.20180124.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Options": "2.0.0",
-          "Microsoft.Orleans.Core": "2.0.0-ci.20180116.5",
-          "Microsoft.Orleans.Runtime.Abstractions": "2.0.0-ci.20180116.5"
+          "Microsoft.Orleans.Core": "2.0.0-ci.20180124.2",
+          "Microsoft.Orleans.Runtime.Abstractions": "2.0.0-ci.20180124.2"
         },
         "compile": {
           "lib/netstandard2.0/Orleans.Runtime.dll": {}
@@ -503,11 +503,11 @@
           "lib/netstandard2.0/Orleans.Runtime.dll": {}
         }
       },
-      "Microsoft.Orleans.Runtime.Abstractions/2.0.0-ci.20180116.5": {
+      "Microsoft.Orleans.Runtime.Abstractions/2.0.0-ci.20180124.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Options": "2.0.0",
-          "Microsoft.Orleans.Core": "2.0.0-ci.20180116.5"
+          "Microsoft.Orleans.Core": "2.0.0-ci.20180124.2"
         },
         "compile": {
           "lib/netstandard2.0/Orleans.Runtime.Abstractions.dll": {}
@@ -2277,6 +2277,16 @@
           "lib/netstandard1.1/System.Net.Http.Formatting.dll": {}
         }
       },
+      "classes/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/classes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/classes.dll": {}
+        }
+      },
       "grains/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2284,6 +2294,7 @@
           "IBM.WatsonDeveloperCloud.Conversation.v1": "1.3.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
           "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci",
+          "classes": "1.0.0",
           "interfaces": "1.0.0"
         },
         "compile": {
@@ -2297,7 +2308,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci"
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci",
+          "classes": "1.0.0"
         },
         "compile": {
           "bin/placeholder/interfaces.dll": {}
@@ -2876,34 +2888,34 @@
         "runtime.json"
       ]
     },
-    "Microsoft.Orleans.Core/2.0.0-ci.20180116.5": {
-      "sha512": "UyXtpa0Iqddqr65yy2zF8Cw9Kb8Bxv6X9x69Ycc+dK8F1L8TOAGwrqpU32rtSdXFlxINYAWhgWNvDXN5rJyflw==",
+    "Microsoft.Orleans.Core/2.0.0-ci.20180124.2": {
+      "sha512": "V8KGd5wQJItULAqTh2hOdbrK2gS1g63l51p3TZfGl6V6Qi11nO5aVBK8VT+W7/oIHi37Lh/Vg3kpERVLqq5bWg==",
       "type": "package",
-      "path": "microsoft.orleans.core/2.0.0-ci.20180116.5",
+      "path": "microsoft.orleans.core/2.0.0-ci.20180124.2",
       "files": [
         "lib/netstandard2.0/Orleans.Core.dll",
-        "microsoft.orleans.core.2.0.0-ci.20180116.5.nupkg.sha512",
+        "microsoft.orleans.core.2.0.0-ci.20180124.2.nupkg.sha512",
         "microsoft.orleans.core.nuspec"
       ]
     },
-    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180116.5": {
-      "sha512": "mHYygiY7RGq24+dSTEA+ArgwlUhqB9GFUQPaOy3qaDfYitjARhyBWeLeh8VRI3044aMya0smVUoANoU+cZNNMw==",
+    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
+      "sha512": "nsRfCCPmS4iQjLTRvixNu3qHbvcxESKH9sO3ZYOj/XwBPdHG+nx3tlqdyNUwKH1ES6yMpMr0bz5z4j+GNAHisQ==",
       "type": "package",
-      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180116.5",
+      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180124.2",
       "files": [
         "lib/netstandard2.0/Orleans.Core.Abstractions.dll",
-        "microsoft.orleans.core.abstractions.2.0.0-ci.20180116.5.nupkg.sha512",
+        "microsoft.orleans.core.abstractions.2.0.0-ci.20180124.2.nupkg.sha512",
         "microsoft.orleans.core.abstractions.nuspec"
       ]
     },
-    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180116.5": {
-      "sha512": "60GR5n7R0CB2xiEDmMsSxI3ryx+zK3RMKVi5MIakhVGPpshzgBBQX7FgpcoaynCuxUHIL/czZ92fKsp38fe3cw==",
+    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {
+      "sha512": "4KzOF6Jpti84VyWGB6ebwJ++2vRH0qUf/TS1m3P7WOww0koMOwSwV7x0nY76ctECyM1d1YFqjmGx0RLypm/Xcw==",
       "type": "package",
-      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180116.5",
+      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180124.2",
       "files": [
         "build/Microsoft.Orleans.OrleansCodeGenerator.Build.targets",
         "buildMultiTargeting/Microsoft.Orleans.OrleansCodeGenerator.Build.targets",
-        "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180116.5.nupkg.sha512",
+        "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180124.2.nupkg.sha512",
         "microsoft.orleans.orleanscodegenerator.build.nuspec",
         "tasks/net461/Microsoft.Build.Framework.dll",
         "tasks/net461/Microsoft.Build.Utilities.Core.dll",
@@ -3069,33 +3081,33 @@
         "tasks/netcoreapp2.0/runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll"
       ]
     },
-    "Microsoft.Orleans.OrleansProviders/2.0.0-ci.20180116.5": {
-      "sha512": "6bU8a8xOBojcadaXEx+DALJV+N8632rhKyrKVnmW6SnDut8KG/Bm/PDs7HNAV+EjNPVHcHmqQbHSuHRRZ9KxoQ==",
+    "Microsoft.Orleans.OrleansProviders/2.0.0-ci.20180124.2": {
+      "sha512": "31rVTxKbcRbhjFuM+luC1QX8npJr3YI+epKLC5OH3OxXsL9TcPG8taNK+CxdSwQ9WSMGtG3WsgR5JwChb+ScMQ==",
       "type": "package",
-      "path": "microsoft.orleans.orleansproviders/2.0.0-ci.20180116.5",
+      "path": "microsoft.orleans.orleansproviders/2.0.0-ci.20180124.2",
       "files": [
         "lib/netstandard2.0/OrleansProviders.dll",
-        "microsoft.orleans.orleansproviders.2.0.0-ci.20180116.5.nupkg.sha512",
+        "microsoft.orleans.orleansproviders.2.0.0-ci.20180124.2.nupkg.sha512",
         "microsoft.orleans.orleansproviders.nuspec"
       ]
     },
-    "Microsoft.Orleans.OrleansRuntime/2.0.0-ci.20180116.5": {
-      "sha512": "WsYESjQ3ShmOXvnUydbCBDu0lHQb4auaC7Z4mtMlMjGRwMe+ndLOKQpMhmBwWreI901qCuX32MJmYpN+2RF+7w==",
+    "Microsoft.Orleans.OrleansRuntime/2.0.0-ci.20180124.2": {
+      "sha512": "i6ShhMsfZump+Fur+XIkmeMcLvGWupOvlnDyaamHSzkCY3kYxN6fudMLxey5GIGn80u4HE5rf0uzRlrd7XoMIQ==",
       "type": "package",
-      "path": "microsoft.orleans.orleansruntime/2.0.0-ci.20180116.5",
+      "path": "microsoft.orleans.orleansruntime/2.0.0-ci.20180124.2",
       "files": [
         "lib/netstandard2.0/Orleans.Runtime.dll",
-        "microsoft.orleans.orleansruntime.2.0.0-ci.20180116.5.nupkg.sha512",
+        "microsoft.orleans.orleansruntime.2.0.0-ci.20180124.2.nupkg.sha512",
         "microsoft.orleans.orleansruntime.nuspec"
       ]
     },
-    "Microsoft.Orleans.Runtime.Abstractions/2.0.0-ci.20180116.5": {
-      "sha512": "7nkBLAKMPnxHxM5x+o+3/J7iOiNNkdmvoQdWiTrGa2cjQdYpJwY7gYuWvdncsSVH5GkMkpem0XcTaSyKTe0wDg==",
+    "Microsoft.Orleans.Runtime.Abstractions/2.0.0-ci.20180124.2": {
+      "sha512": "yYtO6QR1bpAfQ0xGsDGxpFB0wD1YaXOlxjSQ//s+lU0Gvrss3pwplGCGhrJGKWX3fohlGelbm1GmQZhcqYRRXA==",
       "type": "package",
-      "path": "microsoft.orleans.runtime.abstractions/2.0.0-ci.20180116.5",
+      "path": "microsoft.orleans.runtime.abstractions/2.0.0-ci.20180124.2",
       "files": [
         "lib/netstandard2.0/Orleans.Runtime.Abstractions.dll",
-        "microsoft.orleans.runtime.abstractions.2.0.0-ci.20180116.5.nupkg.sha512",
+        "microsoft.orleans.runtime.abstractions.2.0.0-ci.20180124.2.nupkg.sha512",
         "microsoft.orleans.runtime.abstractions.nuspec"
       ]
     },
@@ -7516,6 +7528,11 @@
         "wdc.system.net.http.formatting.netstandard.1.0.0.nupkg.sha512",
         "wdc.system.net.http.formatting.netstandard.nuspec"
       ]
+    },
+    "classes/1.0.0": {
+      "type": "project",
+      "path": "../classes/classes.csproj",
+      "msbuildProject": "../classes/classes.csproj"
     },
     "grains/1.0.0": {
       "type": "project",

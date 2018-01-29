@@ -19,3 +19,5 @@
 /Users/demoroom/Projects/kai-backend/grains/bin/Debug/netstandard2.0/interfaces.pdb
 /Users/demoroom/Projects/kai-backend/grains/obj/Debug/netstandard2.0/codegen/grains.csproj.CoreCompileInputs.cache
 /Users/demoroom/Projects/kai-backend/grains/obj/Debug/netstandard2.0/codegen/grains.AssemblyInfoInputs.cache
+/Users/demoroom/Projects/kai-backend/grains/bin/Debug/netstandard2.0/classes.dll
+/Users/demoroom/Projects/kai-backend/grains/bin/Debug/netstandard2.0/classes.pdb

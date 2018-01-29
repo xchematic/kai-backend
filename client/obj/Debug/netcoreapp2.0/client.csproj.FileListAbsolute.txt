@@ -34,3 +34,5 @@
 /Users/demoroom/Projects/kai-backend/client/obj/Debug/netcoreapp2.0/client.AssemblyInfo.cs
 /Users/demoroom/Projects/kai-backend/client/obj/Debug/netcoreapp2.0/client.dll
 /Users/demoroom/Projects/kai-backend/client/obj/Debug/netcoreapp2.0/client.pdb
+/Users/demoroom/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/classes.dll
+/Users/demoroom/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/classes.pdb
