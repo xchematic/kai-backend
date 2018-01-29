@@ -1,4 +1,5 @@
 using System;
+using System.Dynamic;
 using System.Threading.Tasks;
 using interfaces;
 using Orleans;
@@ -28,12 +29,16 @@ namespace Name
         public Task<AgentProperties> GetProperties(){
             return Task.FromResult(AgentProperties);
         }
-        public async Task<string> SendMessage(string message){
+        public async Task<MessageResult> SendMessage(string message)
+        {
             if(Conversation != null)
             {
                 return await Conversation.Message(message);
             }
-            return "I can't access my Rules Engine process";
+            MessageResult errorMessage = new MessageResult();
+            errorMessage.Success = false;
+            errorMessage.Output = "I can't access my Rules Engine process";
+            return errorMessage;
         }
     }
 }

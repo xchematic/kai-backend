@@ -1079,6 +1079,9 @@
         }
       },
       "classes/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
         "runtime": {
           "classes.dll": {}
         }

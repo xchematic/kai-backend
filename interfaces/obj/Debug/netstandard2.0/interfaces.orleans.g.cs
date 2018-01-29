@@ -8,7 +8,7 @@
 #pragma warning disable 693
 #pragma warning disable 1591
 #pragma warning disable 1998
-[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGen305ab2061eFeaturePopulator))]
+[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGen8695230ae2FeaturePopulator))]
 [assembly: global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
 [assembly: global::Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute(@"interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
 namespace interfaces
@@ -92,9 +92,9 @@ namespace interfaces
             return base.InvokeMethodAsync<global::classes.AgentProperties>(-785768376, null);
         }
 
-        public global::System.Threading.Tasks.Task<global::System.String> SendMessage(global::System.String message)
+        public global::System.Threading.Tasks.Task<global::classes.MessageResult> SendMessage(global::System.String message)
         {
-            return base.InvokeMethodAsync<global::System.String>(-940668667, new global::System.Object[]{message});
+            return base.InvokeMethodAsync<global::classes.MessageResult>(-940668667, new global::System.Object[]{message});
         }
     }
 
@@ -217,9 +217,9 @@ namespace interfaces
             }
         }
 
-        public global::System.Threading.Tasks.Task<global::System.String> Message(global::System.String param)
+        public global::System.Threading.Tasks.Task<global::classes.MessageResult> Message(global::System.String param)
         {
-            return base.InvokeMethodAsync<global::System.String>(860792017, new global::System.Object[]{param});
+            return base.InvokeMethodAsync<global::classes.MessageResult>(860792017, new global::System.Object[]{param});
         }
 
         public global::System.Threading.Tasks.Task SetProperties(global::classes.ConversationProperties properties)
@@ -393,7 +393,7 @@ namespace interfaces
     }
 }
 
-namespace OrleansGeneratedCodeAF336CA1
+namespace OrleansGeneratedCode50C83C0F
 {
     using global::Orleans;
     using global::System.Reflection;
@@ -441,6 +441,58 @@ namespace OrleansGeneratedCodeAF336CA1
         }
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0"), global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute, global::Orleans.CodeGeneration.SerializerAttribute(typeof (global::classes.MessageResult))]
+    internal sealed class OrleansCodeGenclasses_MessageResultSerializer
+    {
+        public OrleansCodeGenclasses_MessageResultSerializer(global::Orleans.Serialization.IFieldUtils fieldUtils)
+        {
+        }
+
+        [global::Orleans.CodeGeneration.CopierMethodAttribute]
+        public global::System.Object DeepCopier(global::System.Object original, global::Orleans.Serialization.ICopyContext context)
+        {
+            global::classes.MessageResult input = ((global::classes.MessageResult)original);
+            global::classes.MessageResult result = new global::classes.MessageResult();
+            context.RecordCopy(original, result);
+            result.AlternateIntents = (global::System.Object)context.DeepCopyInner(input.AlternateIntents);
+            result.Context = (global::System.Object)context.DeepCopyInner(input.Context);
+            result.Entities = (global::System.Object)context.DeepCopyInner(input.Entities);
+            result.Input = (global::System.Object)context.DeepCopyInner(input.Input);
+            result.Intents = (global::System.Object)context.DeepCopyInner(input.Intents);
+            result.Output = (global::System.Object)context.DeepCopyInner(input.Output);
+            result.Success = input.Success;
+            return result;
+        }
+
+        [global::Orleans.CodeGeneration.SerializerMethodAttribute]
+        public void Serializer(global::System.Object untypedInput, global::Orleans.Serialization.ISerializationContext context, global::System.Type expected)
+        {
+            global::classes.MessageResult input = (global::classes.MessageResult)untypedInput;
+            context.SerializeInner(input.AlternateIntents, typeof (global::System.Object));
+            context.SerializeInner(input.Context, typeof (global::System.Object));
+            context.SerializeInner(input.Entities, typeof (global::System.Object));
+            context.SerializeInner(input.Input, typeof (global::System.Object));
+            context.SerializeInner(input.Intents, typeof (global::System.Object));
+            context.SerializeInner(input.Output, typeof (global::System.Object));
+            context.SerializeInner(input.Success, typeof (global::System.Boolean));
+        }
+
+        [global::Orleans.CodeGeneration.DeserializerMethodAttribute]
+        public global::System.Object Deserializer(global::System.Type expected, global::Orleans.Serialization.IDeserializationContext context)
+        {
+            global::classes.MessageResult result = new global::classes.MessageResult();
+            context.RecordObject(result);
+            result.AlternateIntents = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Context = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Entities = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Input = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Intents = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Output = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Success = (global::System.Boolean)context.DeserializeInner(typeof (global::System.Boolean));
+            return (global::classes.MessageResult)result;
+        }
+    }
+
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0"), global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute, global::Orleans.CodeGeneration.SerializerAttribute(typeof (global::classes.ConversationProperties))]
     internal sealed class OrleansCodeGenclasses_ConversationPropertiesSerializer
     {
@@ -482,7 +534,7 @@ namespace OrleansGeneratedCodeAF336CA1
 namespace OrleansGeneratedCode
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
-    internal sealed class OrleansCodeGen305ab2061eFeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
+    internal sealed class OrleansCodeGen8695230ae2FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
     {
         public void Populate(global::Orleans.Metadata.GrainInterfaceFeature feature)
         {
@@ -497,13 +549,15 @@ namespace OrleansGeneratedCode
 
         public void Populate(global::Orleans.Serialization.SerializerFeature feature)
         {
-            feature.AddSerializerType(typeof (global::classes.AgentProperties), typeof (OrleansGeneratedCodeAF336CA1.OrleansCodeGenclasses_AgentPropertiesSerializer));
-            feature.AddSerializerType(typeof (global::classes.ConversationProperties), typeof (OrleansGeneratedCodeAF336CA1.OrleansCodeGenclasses_ConversationPropertiesSerializer));
+            feature.AddSerializerType(typeof (global::classes.AgentProperties), typeof (OrleansGeneratedCode50C83C0F.OrleansCodeGenclasses_AgentPropertiesSerializer));
+            feature.AddSerializerType(typeof (global::classes.MessageResult), typeof (OrleansGeneratedCode50C83C0F.OrleansCodeGenclasses_MessageResultSerializer));
+            feature.AddSerializerType(typeof (global::classes.ConversationProperties), typeof (OrleansGeneratedCode50C83C0F.OrleansCodeGenclasses_ConversationPropertiesSerializer));
             feature.AddKnownType(@"interfaces.IAgent,interfaces", @"interfaces.IAgent");
             feature.AddKnownType(@"interfaces.IConversation,interfaces", @"interfaces.IConversation");
             feature.AddKnownType(@"interfaces.ISimpleText,interfaces", @"interfaces.ISimpleText");
             feature.AddKnownType(@"classes.AgentProperties,classes", @"classes.AgentProperties");
             feature.AddKnownType(@"classes.ConversationProperties,classes", @"classes.ConversationProperties");
+            feature.AddKnownType(@"classes.MessageResult,classes", @"classes.MessageResult");
         }
     }
 }

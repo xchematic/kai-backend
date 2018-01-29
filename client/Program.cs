@@ -6,6 +6,7 @@ using Orleans.Runtime;
 using Orleans.Runtime.Configuration;
 using interfaces;
 using classes;
+using Newtonsoft.Json;
 
 namespace client
 {
@@ -81,8 +82,16 @@ namespace client
             Console.WriteLine("Sending Properties");
             await kaiAgent.SetProperties(properties);
             Console.WriteLine("Sending messsage to the Silo");
-            var text = await kaiAgent.SendMessage("How's it going");
-            Console.WriteLine("\n\n{0}\n\n", text);
+            var result = await kaiAgent.SendMessage("How's it going");
+            Console.WriteLine("After result");
+            if(result.Success)
+            {
+                Console.WriteLine(string.Format("result: {0}", JsonConvert.SerializeObject(result, Formatting.Indented)));
+            }
+            else
+            {
+                Console.WriteLine("\n\n{0}\n\n", "ERROR: " + result.Output.toString());
+            }
         }
     }
 }

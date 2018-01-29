@@ -8,10 +8,10 @@
 #pragma warning disable 693
 #pragma warning disable 1591
 #pragma warning disable 1998
-[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGenbb451b9d89FeaturePopulator))]
+[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGenca496a936eFeaturePopulator))]
 [assembly: global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
 [assembly: global::Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute(@"grains, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-namespace OrleansGeneratedCode7D0B6812
+namespace OrleansGeneratedCode9BA9B9E4
 {
     using global::Orleans;
     using global::System.Reflection;
@@ -20,7 +20,7 @@ namespace OrleansGeneratedCode7D0B6812
 namespace OrleansGeneratedCode
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
-    internal sealed class OrleansCodeGenbb451b9d89FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
+    internal sealed class OrleansCodeGenca496a936eFeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
     {
         public void Populate(global::Orleans.Metadata.GrainInterfaceFeature feature)
         {
@@ -38,13 +38,6 @@ namespace OrleansGeneratedCode
             feature.AddKnownType(@"grains.ConversationGrain,grains", @"grains.ConversationGrain");
             feature.AddKnownType(@"grains.SimpleTextGrain,grains", @"grains.SimpleTextGrain");
             feature.AddKnownType(@"Name.AgentGrain,grains", @"Name.AgentGrain");
-            feature.AddKnownType(@"System.Runtime.Serialization.Formatters.FormatterAssemblyStyle,Newtonsoft.Json", @"FormatterAssemblyStyle");
-            feature.AddKnownType(@"Newtonsoft.Json.SerializationBinder,Newtonsoft.Json", @"Newtonsoft.Json.SerializationBinder");
-            feature.AddKnownType(@"Newtonsoft.Json.TraceLevel,Newtonsoft.Json", @"Newtonsoft.Json.TraceLevel");
-            feature.AddKnownType(@"Newtonsoft.Json.Utilities.MethodBinder,Newtonsoft.Json", @"Newtonsoft.Json.Utilities.MethodBinder");
-            feature.AddKnownType(@"Newtonsoft.Json.Utilities.MemberTypes,Newtonsoft.Json", @"Newtonsoft.Json.Utilities.MemberTypes");
-            feature.AddKnownType(@"Newtonsoft.Json.Utilities.BindingFlags,Newtonsoft.Json", @"Newtonsoft.Json.Utilities.BindingFlags");
-            feature.AddKnownType(@"Newtonsoft.Json.Serialization.FormatterConverter,Newtonsoft.Json", @"Newtonsoft.Json.Serialization.FormatterConverter");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.ConversationService,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.ConversationService");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.IConversationService,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.IConversationService");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.CaptureGroup,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.CaptureGroup");

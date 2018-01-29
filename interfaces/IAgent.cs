@@ -8,6 +8,6 @@ namespace interfaces
     {
         Task SetProperties(AgentProperties properties);
         Task<AgentProperties> GetProperties();
-        Task<string> SendMessage(string message);
+        Task<MessageResult> SendMessage(string message);
     }
 }

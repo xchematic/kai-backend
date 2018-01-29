@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Dynamic;
 using System.Threading.Tasks;
 using interfaces;
 using IBM.WatsonDeveloperCloud.Conversation.v1;
 using IBM.WatsonDeveloperCloud.Conversation.v1.Model;
-using Newtonsoft.Json;
 using classes;
 using Orleans;
 
@@ -30,8 +30,9 @@ namespace grains
             ConversationProperties = properties;
             await OnActivateAsync();
         }
-        public Task<string> Message(string param)
+        public Task<MessageResult> Message(string param)
         {
+            MessageResult response = new MessageResult();
             if(kaiconversation != null)
             {
                 MessageRequest request = new MessageRequest()
@@ -43,9 +44,15 @@ namespace grains
                 };
 
                 MessageResponse result = kaiconversation.Message(ConversationProperties.ConversationWorkspace, request);
-                return Task.FromResult(string.Format("result: {0}", JsonConvert.SerializeObject(result, Formatting.Indented)));
+                //return Task.FromResult(string.Format("result: {0}", JsonConvert.SerializeObject(result, Formatting.Indented)));
+                response.Success = true;
+                response.Output = result.Output;
+                return Task.FromResult(response);
             }
-            return Task.FromResult("Sorry, I'm having problems accessing my rules engine.");
+            
+            response.Success = false;
+            response.Output = "My conversation service is not properly configured";
+            return Task.FromResult(response);
         }
     }
 }

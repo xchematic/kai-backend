@@ -1777,6 +1777,9 @@
       "classes/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
         "compile": {
           "bin/placeholder/classes.dll": {}
         },

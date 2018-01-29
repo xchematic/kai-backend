@@ -6,7 +6,7 @@ namespace interfaces
 {
     public interface IConversation : Orleans.IGrainWithStringKey
     {
-        Task<string> Message(string param);
+        Task<MessageResult> Message(string param);
         Task SetProperties(ConversationProperties properties);
     }
 }
