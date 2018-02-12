@@ -8,7 +8,7 @@
 #pragma warning disable 693
 #pragma warning disable 1591
 #pragma warning disable 1998
-[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGen8695230ae2FeaturePopulator))]
+[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGen7b8c52f8d6FeaturePopulator))]
 [assembly: global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
 [assembly: global::Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute(@"interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
 namespace interfaces
@@ -281,6 +281,150 @@ namespace interfaces
         }
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0"), global::System.SerializableAttribute, global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute, global::Orleans.CodeGeneration.GrainReferenceAttribute(typeof (global::interfaces.INLU))]
+    internal class OrleansCodeGenNLUReference : global::Orleans.Runtime.GrainReference, global::interfaces.INLU
+    {
+        protected OrleansCodeGenNLUReference(global::Orleans.Runtime.GrainReference other): base (other)
+        {
+        }
+
+        OrleansCodeGenNLUReference(global::Orleans.Runtime.GrainReference other, global::Orleans.CodeGeneration.InvokeMethodOptions invokeMethodOptions): base (other, invokeMethodOptions)
+        {
+        }
+
+        protected OrleansCodeGenNLUReference(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context): base (info, context)
+        {
+        }
+
+        public override global::System.Int32 InterfaceId
+        {
+            get
+            {
+                return -2009776743;
+            }
+        }
+
+        public override global::System.UInt16 InterfaceVersion
+        {
+            get
+            {
+                return 1;
+            }
+        }
+
+        public override global::System.String InterfaceName
+        {
+            get
+            {
+                return @"global::interfaces.INLU";
+            }
+        }
+
+        public override global::System.Boolean IsCompatible(global::System.Int32 interfaceId)
+        {
+            return interfaceId == -2009776743 || interfaceId == -1277021679;
+        }
+
+        public override global::System.String GetMethodName(global::System.Int32 interfaceId, global::System.Int32 methodId)
+        {
+            switch (interfaceId)
+            {
+                case -2009776743:
+                    switch (methodId)
+                    {
+                        case -656992407:
+                            return @"SetProperties";
+                        case -785768376:
+                            return @"GetProperties";
+                        case 142281707:
+                            return @"GetCommandMetadata";
+                        default:
+                            throw new global::System.NotImplementedException(@"interfaceId=" + -2009776743 + @",methodId=" + methodId);
+                    }
+
+                case -1277021679:
+                    switch (methodId)
+                    {
+                        default:
+                            throw new global::System.NotImplementedException(@"interfaceId=" + -1277021679 + @",methodId=" + methodId);
+                    }
+
+                default:
+                    throw new global::System.NotImplementedException(@"interfaceId=" + interfaceId);
+            }
+        }
+
+        public global::System.Threading.Tasks.Task SetProperties(global::classes.NLUProperties properties)
+        {
+            return base.InvokeMethodAsync<global::System.Object>(-656992407, new global::System.Object[]{properties});
+        }
+
+        public global::System.Threading.Tasks.Task<global::classes.NLUProperties> GetProperties()
+        {
+            return base.InvokeMethodAsync<global::classes.NLUProperties>(-785768376, null);
+        }
+
+        public global::System.Threading.Tasks.Task<global::classes.CommandMetadata> GetCommandMetadata(global::System.String message)
+        {
+            return base.InvokeMethodAsync<global::classes.CommandMetadata>(142281707, new global::System.Object[]{message});
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0"), global::Orleans.CodeGeneration.MethodInvokerAttribute(typeof (global::interfaces.INLU), -2009776743), global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute]
+    internal class OrleansCodeGenNLUMethodInvoker : global::Orleans.CodeGeneration.IGrainMethodInvoker
+    {
+        public async global::System.Threading.Tasks.Task<global::System.Object> Invoke(global::Orleans.Runtime.IAddressable grain, global::Orleans.CodeGeneration.InvokeMethodRequest request)
+        {
+            global::System.Int32 interfaceId = request.InterfaceId;
+            global::System.Int32 methodId = request.MethodId;
+            global::System.Object[] arguments = request.Arguments;
+            if (grain == null)
+                throw new global::System.ArgumentNullException(@"grain");
+            switch (interfaceId)
+            {
+                case -2009776743:
+                    switch (methodId)
+                    {
+                        case -656992407:
+                            await ((global::interfaces.INLU)grain).SetProperties((global::classes.NLUProperties)arguments[0]);
+                            return null;
+                        case -785768376:
+                            return await ((global::interfaces.INLU)grain).GetProperties();
+                        case 142281707:
+                            return await ((global::interfaces.INLU)grain).GetCommandMetadata((global::System.String)arguments[0]);
+                        default:
+                            throw new global::System.NotImplementedException(@"interfaceId=" + -2009776743 + @",methodId=" + methodId);
+                    }
+
+                case -1277021679:
+                    switch (methodId)
+                    {
+                        default:
+                            throw new global::System.NotImplementedException(@"interfaceId=" + -1277021679 + @",methodId=" + methodId);
+                    }
+
+                default:
+                    throw new global::System.NotImplementedException(@"interfaceId=" + interfaceId);
+            }
+        }
+
+        public global::System.Int32 InterfaceId
+        {
+            get
+            {
+                return -2009776743;
+            }
+        }
+
+        public global::System.UInt16 InterfaceVersion
+        {
+            get
+            {
+                return 1;
+            }
+        }
+    }
+
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0"), global::System.SerializableAttribute, global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute, global::Orleans.CodeGeneration.GrainReferenceAttribute(typeof (global::interfaces.ISimpleText))]
     internal class OrleansCodeGenSimpleTextReference : global::Orleans.Runtime.GrainReference, global::interfaces.ISimpleText
     {
@@ -393,7 +537,7 @@ namespace interfaces
     }
 }
 
-namespace OrleansGeneratedCode50C83C0F
+namespace OrleansGeneratedCode503B20FE
 {
     using global::Orleans;
     using global::System.Reflection;
@@ -414,6 +558,9 @@ namespace OrleansGeneratedCode50C83C0F
             result.ConversationKey = input.ConversationKey;
             result.ConversationPass = input.ConversationPass;
             result.ConversationWorkspace = input.ConversationWorkspace;
+            result.NLUKey = input.NLUKey;
+            result.NLUPass = input.NLUPass;
+            result.NLUURL = input.NLUURL;
             result.Name = input.Name;
             return result;
         }
@@ -425,6 +572,9 @@ namespace OrleansGeneratedCode50C83C0F
             context.SerializeInner(input.ConversationKey, typeof (global::System.String));
             context.SerializeInner(input.ConversationPass, typeof (global::System.String));
             context.SerializeInner(input.ConversationWorkspace, typeof (global::System.String));
+            context.SerializeInner(input.NLUKey, typeof (global::System.String));
+            context.SerializeInner(input.NLUPass, typeof (global::System.String));
+            context.SerializeInner(input.NLUURL, typeof (global::System.String));
             context.SerializeInner(input.Name, typeof (global::System.String));
         }
 
@@ -436,6 +586,9 @@ namespace OrleansGeneratedCode50C83C0F
             result.ConversationKey = (global::System.String)context.DeserializeInner(typeof (global::System.String));
             result.ConversationPass = (global::System.String)context.DeserializeInner(typeof (global::System.String));
             result.ConversationWorkspace = (global::System.String)context.DeserializeInner(typeof (global::System.String));
+            result.NLUKey = (global::System.String)context.DeserializeInner(typeof (global::System.String));
+            result.NLUPass = (global::System.String)context.DeserializeInner(typeof (global::System.String));
+            result.NLUURL = (global::System.String)context.DeserializeInner(typeof (global::System.String));
             result.Name = (global::System.String)context.DeserializeInner(typeof (global::System.String));
             return (global::classes.AgentProperties)result;
         }
@@ -459,6 +612,7 @@ namespace OrleansGeneratedCode50C83C0F
             result.Entities = (global::System.Object)context.DeepCopyInner(input.Entities);
             result.Input = (global::System.Object)context.DeepCopyInner(input.Input);
             result.Intents = (global::System.Object)context.DeepCopyInner(input.Intents);
+            result.Metadata = (global::System.Object)context.DeepCopyInner(input.Metadata);
             result.Output = (global::System.Object)context.DeepCopyInner(input.Output);
             result.Success = input.Success;
             return result;
@@ -473,6 +627,7 @@ namespace OrleansGeneratedCode50C83C0F
             context.SerializeInner(input.Entities, typeof (global::System.Object));
             context.SerializeInner(input.Input, typeof (global::System.Object));
             context.SerializeInner(input.Intents, typeof (global::System.Object));
+            context.SerializeInner(input.Metadata, typeof (global::System.Object));
             context.SerializeInner(input.Output, typeof (global::System.Object));
             context.SerializeInner(input.Success, typeof (global::System.Boolean));
         }
@@ -487,6 +642,7 @@ namespace OrleansGeneratedCode50C83C0F
             result.Entities = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
             result.Input = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
             result.Intents = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Metadata = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
             result.Output = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
             result.Success = (global::System.Boolean)context.DeserializeInner(typeof (global::System.Boolean));
             return (global::classes.MessageResult)result;
@@ -529,17 +685,113 @@ namespace OrleansGeneratedCode50C83C0F
             return (global::classes.ConversationProperties)result;
         }
     }
+
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0"), global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute, global::Orleans.CodeGeneration.SerializerAttribute(typeof (global::classes.NLUProperties))]
+    internal sealed class OrleansCodeGenclasses_NLUPropertiesSerializer
+    {
+        public OrleansCodeGenclasses_NLUPropertiesSerializer(global::Orleans.Serialization.IFieldUtils fieldUtils)
+        {
+        }
+
+        [global::Orleans.CodeGeneration.CopierMethodAttribute]
+        public global::System.Object DeepCopier(global::System.Object original, global::Orleans.Serialization.ICopyContext context)
+        {
+            global::classes.NLUProperties input = ((global::classes.NLUProperties)original);
+            global::classes.NLUProperties result = new global::classes.NLUProperties();
+            context.RecordCopy(original, result);
+            result.NLUPass = input.NLUPass;
+            result.URL = input.URL;
+            return result;
+        }
+
+        [global::Orleans.CodeGeneration.SerializerMethodAttribute]
+        public void Serializer(global::System.Object untypedInput, global::Orleans.Serialization.ISerializationContext context, global::System.Type expected)
+        {
+            global::classes.NLUProperties input = (global::classes.NLUProperties)untypedInput;
+            context.SerializeInner(input.NLUPass, typeof (global::System.String));
+            context.SerializeInner(input.URL, typeof (global::System.String));
+        }
+
+        [global::Orleans.CodeGeneration.DeserializerMethodAttribute]
+        public global::System.Object Deserializer(global::System.Type expected, global::Orleans.Serialization.IDeserializationContext context)
+        {
+            global::classes.NLUProperties result = new global::classes.NLUProperties();
+            context.RecordObject(result);
+            result.NLUPass = (global::System.String)context.DeserializeInner(typeof (global::System.String));
+            result.URL = (global::System.String)context.DeserializeInner(typeof (global::System.String));
+            return (global::classes.NLUProperties)result;
+        }
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0"), global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute, global::Orleans.CodeGeneration.SerializerAttribute(typeof (global::classes.CommandMetadata))]
+    internal sealed class OrleansCodeGenclasses_CommandMetadataSerializer
+    {
+        public OrleansCodeGenclasses_CommandMetadataSerializer(global::Orleans.Serialization.IFieldUtils fieldUtils)
+        {
+        }
+
+        [global::Orleans.CodeGeneration.CopierMethodAttribute]
+        public global::System.Object DeepCopier(global::System.Object original, global::Orleans.Serialization.ICopyContext context)
+        {
+            global::classes.CommandMetadata input = ((global::classes.CommandMetadata)original);
+            global::classes.CommandMetadata result = new global::classes.CommandMetadata();
+            context.RecordCopy(original, result);
+            result.AnalyzedText = input.AnalyzedText;
+            result.Categories = (global::System.Object)context.DeepCopyInner(input.Categories);
+            result.Concepts = (global::System.Object)context.DeepCopyInner(input.Concepts);
+            result.Emotion = (global::System.Object)context.DeepCopyInner(input.Emotion);
+            result.Entities = (global::System.Object)context.DeepCopyInner(input.Entities);
+            result.Keywords = (global::System.Object)context.DeepCopyInner(input.Keywords);
+            result.Language = input.Language;
+            result.SemanticRoles = (global::System.Object)context.DeepCopyInner(input.SemanticRoles);
+            result.Sentiment = (global::System.Object)context.DeepCopyInner(input.Sentiment);
+            return result;
+        }
+
+        [global::Orleans.CodeGeneration.SerializerMethodAttribute]
+        public void Serializer(global::System.Object untypedInput, global::Orleans.Serialization.ISerializationContext context, global::System.Type expected)
+        {
+            global::classes.CommandMetadata input = (global::classes.CommandMetadata)untypedInput;
+            context.SerializeInner(input.AnalyzedText, typeof (global::System.String));
+            context.SerializeInner(input.Categories, typeof (global::System.Object));
+            context.SerializeInner(input.Concepts, typeof (global::System.Object));
+            context.SerializeInner(input.Emotion, typeof (global::System.Object));
+            context.SerializeInner(input.Entities, typeof (global::System.Object));
+            context.SerializeInner(input.Keywords, typeof (global::System.Object));
+            context.SerializeInner(input.Language, typeof (global::System.String));
+            context.SerializeInner(input.SemanticRoles, typeof (global::System.Object));
+            context.SerializeInner(input.Sentiment, typeof (global::System.Object));
+        }
+
+        [global::Orleans.CodeGeneration.DeserializerMethodAttribute]
+        public global::System.Object Deserializer(global::System.Type expected, global::Orleans.Serialization.IDeserializationContext context)
+        {
+            global::classes.CommandMetadata result = new global::classes.CommandMetadata();
+            context.RecordObject(result);
+            result.AnalyzedText = (global::System.String)context.DeserializeInner(typeof (global::System.String));
+            result.Categories = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Concepts = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Emotion = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Entities = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Keywords = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Language = (global::System.String)context.DeserializeInner(typeof (global::System.String));
+            result.SemanticRoles = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            result.Sentiment = (global::System.Object)context.DeserializeInner(typeof (global::System.Object));
+            return (global::classes.CommandMetadata)result;
+        }
+    }
 }
 
 namespace OrleansGeneratedCode
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
-    internal sealed class OrleansCodeGen8695230ae2FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
+    internal sealed class OrleansCodeGen7b8c52f8d6FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
     {
         public void Populate(global::Orleans.Metadata.GrainInterfaceFeature feature)
         {
             feature.Interfaces.Add(new global::Orleans.Metadata.GrainInterfaceMetadata(typeof (global::interfaces.IAgent), typeof (interfaces.OrleansCodeGenAgentReference), typeof (interfaces.OrleansCodeGenAgentMethodInvoker), -1518081194));
             feature.Interfaces.Add(new global::Orleans.Metadata.GrainInterfaceMetadata(typeof (global::interfaces.IConversation), typeof (interfaces.OrleansCodeGenConversationReference), typeof (interfaces.OrleansCodeGenConversationMethodInvoker), 1001429827));
+            feature.Interfaces.Add(new global::Orleans.Metadata.GrainInterfaceMetadata(typeof (global::interfaces.INLU), typeof (interfaces.OrleansCodeGenNLUReference), typeof (interfaces.OrleansCodeGenNLUMethodInvoker), -2009776743));
             feature.Interfaces.Add(new global::Orleans.Metadata.GrainInterfaceMetadata(typeof (global::interfaces.ISimpleText), typeof (interfaces.OrleansCodeGenSimpleTextReference), typeof (interfaces.OrleansCodeGenSimpleTextMethodInvoker), 676983854));
         }
 
@@ -549,15 +801,33 @@ namespace OrleansGeneratedCode
 
         public void Populate(global::Orleans.Serialization.SerializerFeature feature)
         {
-            feature.AddSerializerType(typeof (global::classes.AgentProperties), typeof (OrleansGeneratedCode50C83C0F.OrleansCodeGenclasses_AgentPropertiesSerializer));
-            feature.AddSerializerType(typeof (global::classes.MessageResult), typeof (OrleansGeneratedCode50C83C0F.OrleansCodeGenclasses_MessageResultSerializer));
-            feature.AddSerializerType(typeof (global::classes.ConversationProperties), typeof (OrleansGeneratedCode50C83C0F.OrleansCodeGenclasses_ConversationPropertiesSerializer));
+            feature.AddSerializerType(typeof (global::classes.AgentProperties), typeof (OrleansGeneratedCode503B20FE.OrleansCodeGenclasses_AgentPropertiesSerializer));
+            feature.AddSerializerType(typeof (global::classes.MessageResult), typeof (OrleansGeneratedCode503B20FE.OrleansCodeGenclasses_MessageResultSerializer));
+            feature.AddSerializerType(typeof (global::classes.ConversationProperties), typeof (OrleansGeneratedCode503B20FE.OrleansCodeGenclasses_ConversationPropertiesSerializer));
+            feature.AddSerializerType(typeof (global::classes.NLUProperties), typeof (OrleansGeneratedCode503B20FE.OrleansCodeGenclasses_NLUPropertiesSerializer));
+            feature.AddSerializerType(typeof (global::classes.CommandMetadata), typeof (OrleansGeneratedCode503B20FE.OrleansCodeGenclasses_CommandMetadataSerializer));
             feature.AddKnownType(@"interfaces.IAgent,interfaces", @"interfaces.IAgent");
             feature.AddKnownType(@"interfaces.IConversation,interfaces", @"interfaces.IConversation");
+            feature.AddKnownType(@"interfaces.INLU,interfaces", @"interfaces.INLU");
             feature.AddKnownType(@"interfaces.ISimpleText,interfaces", @"interfaces.ISimpleText");
             feature.AddKnownType(@"classes.AgentProperties,classes", @"classes.AgentProperties");
+            feature.AddKnownType(@"classes.Categories,classes", @"classes.Categories");
+            feature.AddKnownType(@"classes.CommandMetadata,classes", @"classes.CommandMetadata");
+            feature.AddKnownType(@"classes.CommandMetadata2,classes", @"classes.CommandMetadata2");
+            feature.AddKnownType(@"classes.Concept,classes", @"classes.Concept");
             feature.AddKnownType(@"classes.ConversationProperties,classes", @"classes.ConversationProperties");
+            feature.AddKnownType(@"classes.Disambiguation,classes", @"classes.Disambiguation");
+            feature.AddKnownType(@"classes.Emotion,classes", @"classes.Emotion");
+            feature.AddKnownType(@"classes.EmotionMetrics,classes", @"classes.EmotionMetrics");
+            feature.AddKnownType(@"classes.Entity,classes", @"classes.Entity");
+            feature.AddKnownType(@"classes.EntityInstance,classes", @"classes.EntityInstance");
+            feature.AddKnownType(@"classes.Keywords,classes", @"classes.Keywords");
             feature.AddKnownType(@"classes.MessageResult,classes", @"classes.MessageResult");
+            feature.AddKnownType(@"classes.NLUProperties,classes", @"classes.NLUProperties");
+            feature.AddKnownType(@"classes.SemanticRolesResult,classes", @"classes.SemanticRolesResult");
+            feature.AddKnownType(@"classes.Sentiment,classes", @"classes.Sentiment");
+            feature.AddKnownType(@"classes.TargetedEmotion,classes", @"classes.TargetedEmotion");
+            feature.AddKnownType(@"classes.TextEmotion,classes", @"classes.TextEmotion");
         }
     }
 }

@@ -1,13 +1,13 @@
 /in:obj/Debug/netstandard2.0/codegen/interfaces.dll
-/out:/Users/demoroom/Projects/kai-backend/interfaces/obj/Debug/netstandard2.0/interfaces.orleans.g.cs
+/out:/Users/ccerrato147/Projects/kai-backend/interfaces/obj/Debug/netstandard2.0/interfaces.orleans.g.cs
 /loglevel:Warning
-/r:/Users/demoroom/Projects/kai-backend/classes/bin/Debug/netstandard2.0/classes.dll
+/r:/Users/ccerrato147/Projects/kai-backend/classes/bin/Debug/netstandard2.0/classes.dll
 /r:/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.csharp/4.3.0/ref/netstandard1.0/Microsoft.CSharp.dll
 /r:/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.1/build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll
 /r:/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.1/build/netstandard2.0/ref/mscorlib.dll
 /r:/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.1/build/netstandard2.0/ref/netstandard.dll
-/r:/Users/demoroom/.nuget/packages/newtonsoft.json/10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll
-/r:/Users/demoroom/.nuget/packages/microsoft.orleans.core.abstractions/2.0.0-ci.20180124.2/lib/netstandard2.0/Orleans.Core.Abstractions.dll
+/r:/Users/ccerrato147/.nuget/packages/newtonsoft.json/10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll
+/r:/Users/ccerrato147/.nuget/packages/microsoft.orleans.core.abstractions/2.0.0-beta3/lib/netstandard2.0/Orleans.Core.Abstractions.dll
 /r:/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.1/build/netstandard2.0/ref/System.AppContext.dll
 /r:/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.1/build/netstandard2.0/ref/System.Collections.Concurrent.dll
 /r:/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.1/build/netstandard2.0/ref/System.Collections.dll

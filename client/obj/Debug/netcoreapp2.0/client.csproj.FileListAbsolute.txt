@@ -36,3 +36,17 @@
 /Users/demoroom/Projects/kai-backend/client/obj/Debug/netcoreapp2.0/client.pdb
 /Users/demoroom/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/classes.dll
 /Users/demoroom/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/classes.pdb
+/Users/ccerrato147/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/client.deps.json
+/Users/ccerrato147/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/client.runtimeconfig.json
+/Users/ccerrato147/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/client.runtimeconfig.dev.json
+/Users/ccerrato147/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/client.dll
+/Users/ccerrato147/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/client.pdb
+/Users/ccerrato147/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/classes.dll
+/Users/ccerrato147/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/interfaces.dll
+/Users/ccerrato147/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/interfaces.pdb
+/Users/ccerrato147/Projects/kai-backend/client/bin/Debug/netcoreapp2.0/classes.pdb
+/Users/ccerrato147/Projects/kai-backend/client/obj/Debug/netcoreapp2.0/client.csproj.CoreCompileInputs.cache
+/Users/ccerrato147/Projects/kai-backend/client/obj/Debug/netcoreapp2.0/client.AssemblyInfoInputs.cache
+/Users/ccerrato147/Projects/kai-backend/client/obj/Debug/netcoreapp2.0/client.AssemblyInfo.cs
+/Users/ccerrato147/Projects/kai-backend/client/obj/Debug/netcoreapp2.0/client.dll
+/Users/ccerrato147/Projects/kai-backend/client/obj/Debug/netcoreapp2.0/client.pdb

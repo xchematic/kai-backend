@@ -16,7 +16,6 @@ namespace client
         {
             return RunMainAsync().Result;
         }
-
         private static async Task<int> RunMainAsync()
         {
             try
@@ -34,7 +33,6 @@ namespace client
                 return 1;
             }
         }
-
         public static async Task<IClusterClient> StartClientWithRetries(int initializeAttemptsBeforeFailing = 5)
         {
             int attempt = 0;
@@ -68,7 +66,6 @@ namespace client
 
             return client;
         }
-
         private static async Task DoClientWork(IClusterClient client)
         {
             AgentProperties properties = new AgentProperties()
@@ -76,13 +73,17 @@ namespace client
                 Name = "Kai",
                 ConversationKey = "ac1662c2-bc78-4474-8759-014ddca87611",
                 ConversationPass = "LnqVZHFa47a7",
-                ConversationWorkspace = "314571e1-d570-4127-9682-8cda467d6f42"
+                ConversationWorkspace = "314571e1-d570-4127-9682-8cda467d6f42",
+                NLUKey = "b7a8afaa-f5f9-4cf7-9978-619e037c661a",
+                NLUPass = "JCILzdOV12gD",
+                NLUURL = "https://gateway.watsonplatform.net/natural-language-understanding/api"
             };
+
 	        var kaiAgent = client.GetGrain<IAgent>(new Guid("96095149-acb3-4f09-bf65-f62b8b6f9e11"));
             Console.WriteLine("Sending Properties");
             await kaiAgent.SetProperties(properties);
             Console.WriteLine("Sending messsage to the Silo");
-            var result = await kaiAgent.SendMessage("How's it going");
+            var result = await kaiAgent.SendMessage("create a new site called marketing");
             Console.WriteLine("After result");
             if(result.Success)
             {

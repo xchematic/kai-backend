@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Dynamic;
 using System.Threading.Tasks;
 using interfaces;
 using IBM.WatsonDeveloperCloud.Conversation.v1;
@@ -11,7 +10,7 @@ namespace grains
 {
     public class ConversationGrain : Grain, IConversation
     {
-        private ConversationService kaiconversation;
+        private ConversationService KaiConversationService;
         private ConversationProperties ConversationProperties;
 
         public override async Task OnActivateAsync()
@@ -20,7 +19,7 @@ namespace grains
             {
                 string ConversationKey;
                 this.GetPrimaryKey(out ConversationKey);
-                kaiconversation = new ConversationService(ConversationKey, ConversationProperties.ConversationPass, ConversationService.CONVERSATION_VERSION_DATE_2017_05_26);
+                KaiConversationService = new ConversationService(ConversationKey, ConversationProperties.ConversationPass, ConversationService.CONVERSATION_VERSION_DATE_2017_05_26);
             }
             await base.OnActivateAsync();
         }
@@ -33,7 +32,7 @@ namespace grains
         public Task<MessageResult> Message(string param)
         {
             MessageResult response = new MessageResult();
-            if(kaiconversation != null)
+            if(KaiConversationService != null)
             {
                 MessageRequest request = new MessageRequest()
                 {
@@ -43,7 +42,7 @@ namespace grains
                     }
                 };
 
-                MessageResponse result = kaiconversation.Message(ConversationProperties.ConversationWorkspace, request);
+                MessageResponse result = KaiConversationService.Message(ConversationProperties.ConversationWorkspace, request);
                 //return Task.FromResult(string.Format("result: {0}", JsonConvert.SerializeObject(result, Formatting.Indented)));
                 response.Success = true;
                 response.Output = result.Output;

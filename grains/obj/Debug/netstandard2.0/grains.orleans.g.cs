@@ -8,10 +8,10 @@
 #pragma warning disable 693
 #pragma warning disable 1591
 #pragma warning disable 1998
-[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGenca496a936eFeaturePopulator))]
+[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGenbabd5b9b9eFeaturePopulator))]
 [assembly: global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
 [assembly: global::Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute(@"grains, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
-namespace OrleansGeneratedCode9BA9B9E4
+namespace OrleansGeneratedCodeE421FE4
 {
     using global::Orleans;
     using global::System.Reflection;
@@ -20,7 +20,7 @@ namespace OrleansGeneratedCode9BA9B9E4
 namespace OrleansGeneratedCode
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
-    internal sealed class OrleansCodeGenca496a936eFeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
+    internal sealed class OrleansCodeGenbabd5b9b9eFeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
     {
         public void Populate(global::Orleans.Metadata.GrainInterfaceFeature feature)
         {
@@ -31,6 +31,7 @@ namespace OrleansGeneratedCode
             feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof (global::grains.ConversationGrain)));
             feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof (global::grains.SimpleTextGrain)));
             feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof (global::Name.AgentGrain)));
+            feature.Classes.Add(new global::Orleans.Metadata.GrainClassMetadata(typeof (global::Name.NLUGrain)));
         }
 
         public void Populate(global::Orleans.Serialization.SerializerFeature feature)
@@ -38,7 +39,10 @@ namespace OrleansGeneratedCode
             feature.AddKnownType(@"grains.ConversationGrain,grains", @"grains.ConversationGrain");
             feature.AddKnownType(@"grains.SimpleTextGrain,grains", @"grains.SimpleTextGrain");
             feature.AddKnownType(@"Name.AgentGrain,grains", @"Name.AgentGrain");
+            feature.AddKnownType(@"Name.NLUGrain,grains", @"Name.NLUGrain");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.ConversationService,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.ConversationService");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Service.WatsonService,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Service.WatsonService");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Service.IWatsonService,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Service.IWatsonService");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.IConversationService,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.IConversationService");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.CaptureGroup,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.CaptureGroup");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.Context,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.Context");
@@ -108,6 +112,72 @@ namespace OrleansGeneratedCode
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.Value+ValueTypeEnum,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.IBM.WatsonDeveloperCloud.Conversation.v1.Model.Value.ValueTypeEnum");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.ValueExport+ValueTypeEnum,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.IBM.WatsonDeveloperCloud.Conversation.v1.Model.ValueExport.ValueTypeEnum");
             feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Conversation.v1.Model.WorkspaceExport+StatusEnum,IBM.WatsonDeveloperCloud.Conversation.v1", @"IBM.WatsonDeveloperCloud.Conversation.v1.Model.IBM.WatsonDeveloperCloud.Conversation.v1.Model.WorkspaceExport.StatusEnum");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Constants,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Constants");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Util.Utility,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Util.Utility");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Util.Extensions.DescriptionExtension,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Util.Extensions.DescriptionExtension");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Util.Attributes.DescriptionAttribute,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Util.Attributes.DescriptionAttribute");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Sockets.AWebSocketClient,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Sockets.AWebSocketClient");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Sockets.ServiceState,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Sockets.ServiceState");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Sockets.WebSocketClient,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Sockets.WebSocketClient");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.HttpFactory,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.HttpFactory");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.HttpMediaType,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.HttpMediaType");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.IClient,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.IClient");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.IRequest,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.IRequest");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.IResponse,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.IResponse");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Request,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Request");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.WatsonHttpClient,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.WatsonHttpClient");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Filters.ErrorFilter,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Filters.ErrorFilter");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Filters.IHttpFilter,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Filters.IHttpFilter");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Extensions.StreamExtension,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Extensions.StreamExtension");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Extensions.UriExtensions,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Extensions.UriExtensions");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Exceptions.Error,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Exceptions.Error");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Exceptions.ErrorConverter,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Exceptions.ErrorConverter");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.Http.Exceptions.ServiceResponseException,IBM.WatsonDeveloperCloud", @"IBM.WatsonDeveloperCloud.Http.Exceptions.ServiceResponseException");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.INaturalLanguageUnderstandingService,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.INaturalLanguageUnderstandingService");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.NaturalLanguageUnderstandingService,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.NaturalLanguageUnderstandingService");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.AnalysisResults,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.AnalysisResults");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Author,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Author");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.CategoriesOptions,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.CategoriesOptions");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.CategoriesResult,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.CategoriesResult");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.ConceptsOptions,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.ConceptsOptions");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.ConceptsResult,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.ConceptsResult");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.DisambiguationResult,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.DisambiguationResult");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.DocumentEmotionResults,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.DocumentEmotionResults");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.DocumentSentimentResults,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.DocumentSentimentResults");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EmotionOptions,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EmotionOptions");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EmotionResult,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EmotionResult");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EmotionScores,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EmotionScores");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EntitiesOptions,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EntitiesOptions");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EntitiesResult,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EntitiesResult");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EntityMention,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.EntityMention");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Features,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Features");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.FeatureSentimentResults,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.FeatureSentimentResults");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Feed,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Feed");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.InlineResponse200,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.InlineResponse200");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.KeywordsOptions,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.KeywordsOptions");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.KeywordsResult,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.KeywordsResult");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.ListModelsResults,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.ListModelsResults");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.MetadataOptions,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.MetadataOptions");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.MetadataResult,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.MetadataResult");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Model,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Model");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Parameters,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Parameters");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.RelationArgument,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.RelationArgument");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.RelationEntity,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.RelationEntity");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.RelationsOptions,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.RelationsOptions");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.RelationsResult,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.RelationsResult");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesAction,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesAction");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesEntity,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesEntity");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesKeyword,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesKeyword");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesObject,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesObject");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesOptions,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesOptions");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesResult,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesResult");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesSubject,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesSubject");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesVerb,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SemanticRolesVerb");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SentimentOptions,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SentimentOptions");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SentimentResult,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.SentimentResult");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.TargetedEmotionResults,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.TargetedEmotionResults");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.TargetedSentimentResults,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.TargetedSentimentResults");
+            feature.AddKnownType(@"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Usage,IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1", @"IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model.Usage");
         }
     }
 }

@@ -25,5 +25,7 @@ namespace classes
         
         [JsonProperty("success", NullValueHandling = NullValueHandling.Ignore)]
         public bool Success {get;set;}
+        [JsonProperty("input", NullValueHandling = NullValueHandling.Ignore)]
+        public dynamic Metadata {get;set;}
     }
 }

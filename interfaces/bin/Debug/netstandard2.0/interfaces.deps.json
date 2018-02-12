@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "778e2d86cfc744a51bb6e4882fe4906d4a8bba45"
+    "signature": "422819093a88d78e0014429dea1d4069c38c4460"
   },
   "compilationOptions": {
     "defines": [
@@ -24,8 +24,8 @@
     ".NETStandard,Version=v2.0": {
       "interfaces/1.0.0": {
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2",
-          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20180124.2",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-beta3",
+          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-beta3",
           "NETStandard.Library": "2.0.1",
           "classes": "1.0.0",
           "Microsoft.Win32.Primitives": "4.0.3.0",
@@ -736,7 +736,7 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-beta3": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
           "System.Runtime.Serialization.Formatters": "4.3.0"
@@ -745,7 +745,7 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {},
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-beta3": {},
       "NETStandard.Library/2.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -1128,8 +1128,8 @@
     ".NETStandard,Version=v2.0/": {
       "interfaces/1.0.0": {
         "dependencies": {
-          "Microsoft.Orleans.Core.Abstractions": "2.0.0-ci.20180124.2",
-          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-ci.20180124.2",
+          "Microsoft.Orleans.Core.Abstractions": "2.0.0-beta3",
+          "Microsoft.Orleans.OrleansCodeGenerator.Build": "2.0.0-beta3",
           "NETStandard.Library": "2.0.1",
           "classes": "1.0.0",
           "Microsoft.Win32.Primitives": "4.0.3.0",
@@ -1275,7 +1275,7 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
+      "Microsoft.Orleans.Core.Abstractions/2.0.0-beta3": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.3",
           "System.Runtime.Serialization.Formatters": "4.3.0"
@@ -1284,7 +1284,7 @@
           "lib/netstandard2.0/Orleans.Core.Abstractions.dll": {}
         }
       },
-      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {},
+      "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-beta3": {},
       "NETStandard.Library/2.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -1755,19 +1755,19 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Orleans.Core.Abstractions/2.0.0-ci.20180124.2": {
+    "Microsoft.Orleans.Core.Abstractions/2.0.0-beta3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nsRfCCPmS4iQjLTRvixNu3qHbvcxESKH9sO3ZYOj/XwBPdHG+nx3tlqdyNUwKH1ES6yMpMr0bz5z4j+GNAHisQ==",
-      "path": "microsoft.orleans.core.abstractions/2.0.0-ci.20180124.2",
-      "hashPath": "microsoft.orleans.core.abstractions.2.0.0-ci.20180124.2.nupkg.sha512"
+      "sha512": "sha512-qnpRVF5nv+1eQhqkCMdE4ZHfgXXcA8i2Cy9c+Z2B8RrJhdA7AT0ZknfVELExG7BlhncbRby3zae3AN9eNSJZCQ==",
+      "path": "microsoft.orleans.core.abstractions/2.0.0-beta3",
+      "hashPath": "microsoft.orleans.core.abstractions.2.0.0-beta3.nupkg.sha512"
     },
-    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-ci.20180124.2": {
+    "Microsoft.Orleans.OrleansCodeGenerator.Build/2.0.0-beta3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4KzOF6Jpti84VyWGB6ebwJ++2vRH0qUf/TS1m3P7WOww0koMOwSwV7x0nY76ctECyM1d1YFqjmGx0RLypm/Xcw==",
-      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-ci.20180124.2",
-      "hashPath": "microsoft.orleans.orleanscodegenerator.build.2.0.0-ci.20180124.2.nupkg.sha512"
+      "sha512": "sha512-02qy/bhjCpRSPCMAk8h6c2nu5QPlmggDU5PXcyUzvCljmHlYVICG6PK1IAAHG6YDONjpqbm7h+0Gox2VvbFZzQ==",
+      "path": "microsoft.orleans.orleanscodegenerator.build/2.0.0-beta3",
+      "hashPath": "microsoft.orleans.orleanscodegenerator.build.2.0.0-beta3.nupkg.sha512"
     },
     "NETStandard.Library/2.0.1": {
       "type": "package",
