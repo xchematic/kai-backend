@@ -22,7 +22,8 @@ namespace client
             {
                 using(var client = await StartClientWithRetries())
                 {
-                    await DoClientWork(client);
+                    //await DoClientWork(client);
+                    await DoNLUWork(client);
                     Console.ReadKey();
                 }
                 return 0;
@@ -93,6 +94,39 @@ namespace client
             {
                 Console.WriteLine("\n\n{0}\n\n", "ERROR: " + result.Output.toString());
             }
+        }
+
+        private static async Task DoNLUWork(IClusterClient client)
+        {
+            AgentProperties properties = new AgentProperties()
+            {
+                Name = "Kai",
+                ConversationKey = "ac1662c2-bc78-4474-8759-014ddca87611",
+                ConversationPass = "LnqVZHFa47a7",
+                ConversationWorkspace = "314571e1-d570-4127-9682-8cda467d6f42",
+                NLUKey = "b7a8afaa-f5f9-4cf7-9978-619e037c661a",
+                NLUPass = "JCILzdOV12gD",
+                NLUURL = "https://gateway.watsonplatform.net/natural-language-understanding/api"
+            };
+
+	        var nluGrain = client.GetGrain<INLU>(properties.NLUKey);
+            Console.WriteLine("Sending Properties");
+            await nluGrain.SetProperties(new NLUProperties{
+                NLUPass = properties.NLUPass,
+                URL = properties.NLUURL
+            });
+            Console.WriteLine("Sending messsage to the Silo");
+            var result = await nluGrain.GetCommandMetadata("create a new site called marketing");
+            Console.WriteLine("After result");
+            if(result != null)
+            {
+                Console.WriteLine(string.Format("result: {0}", JsonConvert.SerializeObject(result, Formatting.Indented)));
+            }
+            else
+            {
+                Console.WriteLine("\n\n{0}\n\n", "ERROR: result is null");
+            }
+            Console.WriteLine("FIN");
         }
     }
 }

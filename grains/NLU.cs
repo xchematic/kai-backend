@@ -5,6 +5,7 @@ using Orleans;
 using classes;
 using IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1;
 using IBM.WatsonDeveloperCloud.NaturalLanguageUnderstanding.v1.Model;
+using Newtonsoft.Json;
 
 namespace Name
 {
@@ -22,7 +23,7 @@ namespace Name
                 KaiNLUService = new NaturalLanguageUnderstandingService(NLUSKey, NLUSProps.NLUPass, NaturalLanguageUnderstandingService.NATURAL_LANGUAGE_UNDERSTANDING_VERSION_DATE_2017_02_27);
                 KaiNLUService.Endpoint = NLUSProps.URL;
             }
-            await OnActivateAsync();
+            await base.OnActivateAsync();
         }
         public async Task SetProperties(NLUProperties properties)
         {
@@ -55,8 +56,8 @@ namespace Name
                     };
                     AnalysisResults result = KaiNLUService.Analyze(parameters);
                     metadata.AnalyzedText = result.AnalyzedText;
-                    metadata.Keywords = result.Keywords;
-                    metadata.Sentiment = result.Sentiment;
+                    metadata.Keywords = JsonConvert.SerializeObject(result.Keywords , Formatting.Indented);
+                    //metadata.Sentiment = result.Sentiment;
                     //metadata.Emotion = result.Emotion;
                     //metadata.SemanticRoles = result.SemanticRoles;
                     return metadata;

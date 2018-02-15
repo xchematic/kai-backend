@@ -8,7 +8,7 @@
 #pragma warning disable 693
 #pragma warning disable 1591
 #pragma warning disable 1998
-[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGen7b8c52f8d6FeaturePopulator))]
+[assembly: global::Orleans.Metadata.FeaturePopulatorAttribute(typeof (OrleansGeneratedCode.OrleansCodeGene954144198FeaturePopulator))]
 [assembly: global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
 [assembly: global::Orleans.CodeGeneration.OrleansCodeGenerationTargetAttribute(@"interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null")]
 namespace interfaces
@@ -537,7 +537,7 @@ namespace interfaces
     }
 }
 
-namespace OrleansGeneratedCode503B20FE
+namespace OrleansGeneratedCode8B6BF78D
 {
     using global::Orleans;
     using global::System.Reflection;
@@ -785,7 +785,7 @@ namespace OrleansGeneratedCode503B20FE
 namespace OrleansGeneratedCode
 {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(@"Orleans-CodeGenerator", @"2.0.0.0")]
-    internal sealed class OrleansCodeGen7b8c52f8d6FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
+    internal sealed class OrleansCodeGene954144198FeaturePopulator : global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainInterfaceFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Metadata.GrainClassFeature>, global::Orleans.Metadata.IFeaturePopulator<global::Orleans.Serialization.SerializerFeature>
     {
         public void Populate(global::Orleans.Metadata.GrainInterfaceFeature feature)
         {
@@ -801,11 +801,11 @@ namespace OrleansGeneratedCode
 
         public void Populate(global::Orleans.Serialization.SerializerFeature feature)
         {
-            feature.AddSerializerType(typeof (global::classes.AgentProperties), typeof (OrleansGeneratedCode503B20FE.OrleansCodeGenclasses_AgentPropertiesSerializer));
-            feature.AddSerializerType(typeof (global::classes.MessageResult), typeof (OrleansGeneratedCode503B20FE.OrleansCodeGenclasses_MessageResultSerializer));
-            feature.AddSerializerType(typeof (global::classes.ConversationProperties), typeof (OrleansGeneratedCode503B20FE.OrleansCodeGenclasses_ConversationPropertiesSerializer));
-            feature.AddSerializerType(typeof (global::classes.NLUProperties), typeof (OrleansGeneratedCode503B20FE.OrleansCodeGenclasses_NLUPropertiesSerializer));
-            feature.AddSerializerType(typeof (global::classes.CommandMetadata), typeof (OrleansGeneratedCode503B20FE.OrleansCodeGenclasses_CommandMetadataSerializer));
+            feature.AddSerializerType(typeof (global::classes.AgentProperties), typeof (OrleansGeneratedCode8B6BF78D.OrleansCodeGenclasses_AgentPropertiesSerializer));
+            feature.AddSerializerType(typeof (global::classes.MessageResult), typeof (OrleansGeneratedCode8B6BF78D.OrleansCodeGenclasses_MessageResultSerializer));
+            feature.AddSerializerType(typeof (global::classes.ConversationProperties), typeof (OrleansGeneratedCode8B6BF78D.OrleansCodeGenclasses_ConversationPropertiesSerializer));
+            feature.AddSerializerType(typeof (global::classes.NLUProperties), typeof (OrleansGeneratedCode8B6BF78D.OrleansCodeGenclasses_NLUPropertiesSerializer));
+            feature.AddSerializerType(typeof (global::classes.CommandMetadata), typeof (OrleansGeneratedCode8B6BF78D.OrleansCodeGenclasses_CommandMetadataSerializer));
             feature.AddKnownType(@"interfaces.IAgent,interfaces", @"interfaces.IAgent");
             feature.AddKnownType(@"interfaces.IConversation,interfaces", @"interfaces.IConversation");
             feature.AddKnownType(@"interfaces.INLU,interfaces", @"interfaces.INLU");
